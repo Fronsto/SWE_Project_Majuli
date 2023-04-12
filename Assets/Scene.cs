@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 
 public class Scene : MonoBehaviour
 {
-    public InputActionProperty trigAction;
+    public InputActionProperty rightActionValue;
+    public InputActionProperty leftActionValue;
     public GameObject WorldSphere;
     public int currentX, currentY;
     public string currentSite;
@@ -247,7 +248,7 @@ public class Scene : MonoBehaviour
         float angle = Camera.main.transform.eulerAngles.y;
 
         // move
-        if (!lockInput && (Input.GetKeyDown(KeyCode.UpArrow) || trigAction.action.ReadValue<float>() > 0.9f))
+        if (!lockInput && (Input.GetKeyDown(KeyCode.UpArrow) || leftActionValue.action.ReadValue<float>() > 0.9f || rightActionValue.action.ReadValue<float>() > 0.9f))
         {
             lockInput = true;
             List<string> obs = locData[new Vector2Int(currentX, currentY)].obstacles;
@@ -320,7 +321,7 @@ public class Scene : MonoBehaviour
                 }
             }
 
-        } else if(lockInput && (trigAction.action.ReadValue<float>() < 0.1f)) {
+        } else if(lockInput && leftActionValue.action.ReadValue<float>() < 0.1f && rightActionValue.action.ReadValue<float>() < 0.1f) {
             lockInput = false;
         }
 

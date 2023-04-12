@@ -576,7 +576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f5a24a380916d14db9775daab4fe333, type: 3}
@@ -800,26 +800,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9e28ce82beae94d968ff2f345d7697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigAction:
-    m_UseReference: 1
+  rightActionValue:
+    m_UseReference: 0
     m_Action:
-      m_Name: Trig
+      m_Name: 
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: e7ca45b2-8245-46ed-8ebb-571044e763d8
+      m_Id: 
       m_Processors: 
       m_Interactions: 
-      m_SingletonActionBindings:
-      - m_Name: 
-        m_Id: 99f1d40e-c44e-4cb4-9eff-3a56c8ce1e14
-        m_Path: <XRController>{LeftHand}/trigger
-        m_Interactions: 
-        m_Processors: 
-        m_Groups: 
-        m_Action: Trig
-        m_Flags: 0
+      m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+    m_Reference: {fileID: 0}
+  leftActionValue:
+    m_UseReference: 0
+    m_Action:
+      m_Name: 
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
   WorldSphere: {fileID: 742620980}
   currentX: 0
   currentY: 0
