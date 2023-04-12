@@ -3,7 +3,10 @@ guid: 4d9e28ce82beae94d968ff2f345d7697
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - WorldSphere: {instanceID: 0}
+  - sphereBox: {fileID: 2100000, guid: 77ea5238a1d61b64780216ae46d12acb, type: 2}
+  - Tablet: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

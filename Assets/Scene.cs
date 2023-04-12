@@ -2,19 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Scene : MonoBehaviour
 {
+    public InputActionProperty trigAction;
     public GameObject WorldSphere;
     public int currentX, currentY;
     public string currentSite;
     public GameObject[] arrows;
     public Material sphereBox;
-    public GameObject Tablet;
     int maxX, maxY;
     Dictionary<String, SiteData> siteData;
     Dictionary<Vector2Int, LocationData> locData;
     Dictionary<Vector2Int, Texture> locTextures;
+    bool lockInput = false;
 
     // Site data 
     [Serializable]
@@ -105,6 +107,16 @@ public class Scene : MonoBehaviour
     ///////////////////////////////////////////////////////////////////////////
     // Jump to a location within the current site
     ///////////////////////////////////////////////////////////////////////////
+    void ChangeTexture(){
+        // first blur the existing texture
+
+        
+        sphereBox.SetTexture("_MainTex", locTextures[new Vector2Int(currentX, currentY)]);
+        // set rotation of worldSphere based on z rotation of camera
+        int rotation = locData[new Vector2Int(currentX, currentY)].rotation;
+        WorldSphere.transform.rotation = Quaternion.Euler(0, rotation, 0);
+
+    }
     void SetAndPlayAmbientAudio() {
         string audioToPlay = null;
         var audioSource = WorldSphere.GetComponent<AudioSource>();
@@ -171,26 +183,12 @@ public class Scene : MonoBehaviour
             Debug.Log("No texture for " + currentX + " " + currentY + "");
             return false;
         }
-        sphereBox.SetTexture("_MainTex", locTextures[new Vector2Int(currentX, currentY)]);
-        // set rotation of worldSphere based on z rotation of camera
-        int rotation = locData[new Vector2Int(currentX, currentY)].rotation;
-        // if(rotation == null) rotation = 0;
-        WorldSphere.transform.rotation = Quaternion.Euler(0, rotation, 0);
-
+        // animate this thing
+        ChangeTexture();
         // set the arrows
         SetDirectionMarkers();
         // set the audio
         SetAndPlayAmbientAudio();
-
-        // set the videoContent to be played on the tablet
-        string videoContent = null;
-        if(locData[new Vector2Int(currentX, currentY)].tabVideo != null) {
-            videoContent = locData[new Vector2Int(currentX, currentY)].tabVideo;
-        } else if(siteData[currentSite].tabVideo != null) {
-            videoContent = siteData[currentSite].tabVideo;
-        } 
-        // call the tablet methods to provide the video and image content
-        Tablet.GetComponent<Tab_Controller>().SetVideoContent(videoContent);
 
         return true;
     }
@@ -239,11 +237,7 @@ public class Scene : MonoBehaviour
         // diable it
         videoPlayer.enabled = false;
 
-        // JumpToSite("Auniati");
-        // JumpToSite("Chawrekia");
-        // JumpToSite("Baghor_Gaon");
-        // JumpToSite("Madhya_Majuli_Satra");
-        JumpToSite("Bali_Jokaibuwa_Gaon");
+        JumpToSite("Auniati");
     }
 
     // Update is called once per frame
@@ -252,21 +246,10 @@ public class Scene : MonoBehaviour
         //getting angle of view
         float angle = Camera.main.transform.eulerAngles.y;
 
-        // tablet
-        if(Input.GetKeyDown(KeyCode.Space)) {
-            // show the tablet if it is not shown
-            if(Tablet.activeSelf == false)
-            {
-                Tablet.SetActive(true);
-                Tablet.GetComponent<Tab_Controller>().PlayVideo();
-            }
-            else 
-                Tablet.SetActive(false);
-        }
-
         // move
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (!lockInput && (Input.GetKeyDown(KeyCode.UpArrow) || trigAction.action.ReadValue<float>() > 0.9f))
         {
+            lockInput = true;
             List<string> obs = locData[new Vector2Int(currentX, currentY)].obstacles;
             int[] direcs = new int[4];
             direcs[0] = 0; direcs[1] = 0; direcs[2] = 0; direcs[3] = 0;
@@ -337,6 +320,8 @@ public class Scene : MonoBehaviour
                 }
             }
 
+        } else if(lockInput && (trigAction.action.ReadValue<float>() < 0.1f)) {
+            lockInput = false;
         }
 
     }
