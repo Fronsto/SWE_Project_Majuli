@@ -205,7 +205,7 @@ public class Scene : MonoBehaviour
         LoadTextures();
 
         // jump to the initial location within this site
-        if(initialLocation == null) {
+        if(initialLocation == null || (initialLocation.x == 0 && initialLocation.y == 0)) {
             SiteData site = siteData[currentSite];
             if( JumpToLocation(site.initialLocation.x, site.initialLocation.y) == false){
                 Debug.Log("Error in jumping to initial location");
@@ -238,7 +238,7 @@ public class Scene : MonoBehaviour
         // diable it
         videoPlayer.enabled = false;
 
-        JumpToSite("IntroVideo");
+        JumpToSite("Tinali_Road");
     }
 
     // Update is called once per frame
