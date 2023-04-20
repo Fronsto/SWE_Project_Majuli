@@ -8,8 +8,7 @@ using UnityEngine.SceneManagement;
 public class Tab_Controller : MonoBehaviour
 {
     public InputActionProperty leftSelectValue;
-    public GameObject tablet, video, map, menu, videoPlayerObject, leftHand, rightHand;
-    [SerializeField] Scene sceneScript; 
+    public GameObject tablet, video, map, menu, videoPlayerObject, leftHand, rightHand; 
 
     // Start is called before the first frame update
     void Start()
