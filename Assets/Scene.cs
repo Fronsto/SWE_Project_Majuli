@@ -159,7 +159,7 @@ public class Scene : MonoBehaviour
         videoPlayer.enabled = false;
         JumpToSite(transition.siteName, transition.initialLocation);
     }
-    bool JumpToLocation(int x, int y) {
+    public bool JumpToLocation(int x, int y) {
         currentX = x; currentY = y; 
         if(locData.ContainsKey(new Vector2Int(currentX, currentY)) == false){
             Debug.Log("No location grid data for " + currentX + " " + currentY + "");
@@ -197,7 +197,7 @@ public class Scene : MonoBehaviour
     ///////////////////////////////////////////////////////////////////////////
     // Jump to a site
     ///////////////////////////////////////////////////////////////////////////
-    void JumpToSite(string siteName, Coordinates initialLocation = null) {
+    public void JumpToSite(string siteName, Coordinates initialLocation = null) {
         currentSite = siteName;
         // First, we load the grid data from locData.json
         LoadGrid();
@@ -238,7 +238,7 @@ public class Scene : MonoBehaviour
         // diable it
         videoPlayer.enabled = false;
 
-        JumpToSite("Auniati");
+        JumpToSite("IntroVideo");
     }
 
     // Update is called once per frame

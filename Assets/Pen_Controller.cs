@@ -7,7 +7,6 @@ using UnityEngine.InputSystem;
 public class Pen_Controller : MonoBehaviour
 {
     public InputActionProperty rightSelectAction; // Trigger
-    public InputActionProperty leftSelectAction;
     public GameObject pen;
     public GameObject rightHand;
 
@@ -21,7 +20,7 @@ public class Pen_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(leftSelectAction.action.ReadValue<float>() > 0.8f || rightSelectAction.action.ReadValue<float>() > 0.8f) {
+        if(rightSelectAction.action.ReadValue<float>() > 0.75f) {
             pen.SetActive(true);
             rightHand.SetActive(false);
         }
