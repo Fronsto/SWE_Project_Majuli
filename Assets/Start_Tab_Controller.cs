@@ -14,6 +14,7 @@ public class Start_Tab_Controller : MonoBehaviour
     void Start()
     {
         leftHand.SetActive(true);
+        sphereBox.SetTexture("_MainTex", Resources.Load<Texture>("InitialTexture"));
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class Start_Tab_Controller : MonoBehaviour
     {
         Application.Quit();
     }
+
     IEnumerator PlayVideoAndChangeScene(string scene) {
         var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
         videoPlayer.enabled = true;
@@ -54,6 +56,7 @@ public class Start_Tab_Controller : MonoBehaviour
         SceneManager.LoadScene(scene);
        
     }
+
     public void Devotee()
     {
         StartCoroutine(PlayVideoAndChangeScene("Devotee"));

@@ -76,9 +76,9 @@ public class Scene : MonoBehaviour
     void LoadGrid(){
         locData = new Dictionary<Vector2Int, LocationData>();
         // Read the file and use JSON utility to parse it , and create the locData map
-        TextAsset mytxtData=(TextAsset)Resources.Load(currentSite + "/locData");
+        TextAsset mytxtData = (TextAsset)Resources.Load(currentSite + "/locData");
 
-        string jsonString=mytxtData.text;
+        string jsonString = mytxtData.text;
         LocsWrapper locs_ = JsonUtility.FromJson<LocsWrapper>(jsonString);
         LocationInfo[] arrayOfLocations = locs_.Locs;
 
