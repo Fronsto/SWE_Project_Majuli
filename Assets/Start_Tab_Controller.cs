@@ -1,36 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Video;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Start_Tab_Controller : MonoBehaviour
 {
-    public GameObject WorldSphere, tablet, leftHand;
+    public GameObject WorldSphere, tablet, leftHand, rightHand, introVideo, startMenu;
     public Material sphereBox;
+    string sceneToBeLoaded;
 
     // Start is called before the first frame update
     void Start()
     {
         leftHand.SetActive(true);
+        rightHand.SetActive(true);
+        introVideo.SetActive(false);
+        startMenu.SetActive(true);
+        sceneToBeLoaded = "";
         sphereBox.SetTexture("_MainTex", Resources.Load<Texture>("InitialTexture"));
+        sphereBox.SetFloat("_Exposure", 1.0f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void ExitApplication()
-    {
+    public void ExitApplication() {
         Application.Quit();
     }
 
-    IEnumerator PlayVideoAndChangeScene(string scene) {
+    IEnumerator PlayVideoAndChangeScene() {
         var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
-        videoPlayer.enabled = true;
         videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/ferry");
         videoPlayer.Play();
         tablet.SetActive(false);
@@ -52,23 +58,48 @@ public class Start_Tab_Controller : MonoBehaviour
         while(videoPlayer.isPlaying) {
             yield return null;
         }
-        videoPlayer.enabled = false;
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(sceneToBeLoaded);
        
     }
 
-    public void Devotee()
-    {
-        StartCoroutine(PlayVideoAndChangeScene("Devotee"));
+    IEnumerator PlayIntroVideo() {
+        startMenu.SetActive(false);
+        introVideo.SetActive(true);
+        var introVideoPlayer = introVideo.GetComponent<UnityEngine.Video.VideoPlayer>();
+        introVideoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/akash_banti");
+        introVideoPlayer.loopPointReached += OnVideoFinished;
+        introVideoPlayer.Play();
+        // wait for video to finish
+        while(introVideoPlayer.isPlaying) {
+            yield return null;
+        }
     }
 
-    public void Traveller()
-    {
-        StartCoroutine(PlayVideoAndChangeScene("Traveller"));
+    void OnVideoFinished(VideoPlayer vp){
+        StartCoroutine(PlayVideoAndChangeScene());
     }
 
-    public void Expert()
-    {
-        StartCoroutine(PlayVideoAndChangeScene("Expert"));
+    public void Devotee() {
+        sceneToBeLoaded = "Devotee";
+        StartCoroutine(PlayIntroVideo());
+    }
+
+    public void Traveller() {
+        sceneToBeLoaded = "Traveller";
+        StartCoroutine(PlayIntroVideo());
+    }
+
+    public void Expert() {
+        sceneToBeLoaded = "Expert";
+        StartCoroutine(PlayIntroVideo());
+    }
+
+    public void Back() {
+        startMenu.SetActive(true);
+        introVideo.SetActive(false);
+    }
+
+    public void SkipIntro() {
+        StartCoroutine(PlayVideoAndChangeScene());
     }
 }

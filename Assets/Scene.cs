@@ -267,6 +267,7 @@ public class Scene : MonoBehaviour
         var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
         // diable it
         videoPlayer.enabled = false;
+        sphereBox.SetFloat("_Exposure", 1.0f);
 
         JumpToSite("Auniati");
     }
