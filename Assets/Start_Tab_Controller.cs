@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class Start_Tab_Controller : MonoBehaviour
 {
+    public GameObject WorldSphere, tablet, leftHand;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        leftHand.SetActive(true);
     }
 
     // Update is called once per frame
@@ -23,19 +25,31 @@ public class Start_Tab_Controller : MonoBehaviour
     {
         Application.Quit();
     }
-
+    IEnumerator PlayVideoAndChangeScene(string scene) {
+        var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
+        videoPlayer.enabled = true;
+        videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/ferry");
+        videoPlayer.Play();
+        tablet.SetActive(false);
+        while(videoPlayer.isPlaying) {
+            yield return null;
+        }
+        videoPlayer.enabled = false;
+        SceneManager.LoadScene(scene);
+       
+    }
     public void Devotee()
     {
-        SceneManager.LoadScene("Devotee");
+        StartCoroutine(PlayVideoAndChangeScene("Devotee"));
     }
 
     public void Traveller()
     {
-        SceneManager.LoadScene("Traveller");
+        StartCoroutine(PlayVideoAndChangeScene("Traveller"));
     }
 
     public void Expert()
     {
-        SceneManager.LoadScene("Expert");
+        StartCoroutine(PlayVideoAndChangeScene("Expert"));
     }
 }

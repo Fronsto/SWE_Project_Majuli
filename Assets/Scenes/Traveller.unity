@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1917,37 +1917,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513533424}
   m_CullTransparentMesh: 1
---- !u!1 &525733729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 525733730}
-  m_Layer: 0
-  m_Name: Tip
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &525733730
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525733729}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4, y: 3.2, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1556720540}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &559034841 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a6416ec71ab42404489395319f0f7f36, type: 3}
@@ -2541,7 +2510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &798287413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2891,16 +2860,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858184160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.57071424, y: 0.06448353, z: -0.19914037, w: 0.79402155}
+  m_LocalPosition: {x: -5.74, y: -10.1, z: 13.31}
+  m_LocalScale: {x: 1, y: 0.63058, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 472178691}
   - {fileID: 148342652}
   m_Father: {fileID: 1556720540}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 68.749, y: -20.157, z: -42.024}
 --- !u!1 &882948162
 GameObject:
   m_ObjectHideFlags: 0
@@ -4793,7 +4762,6 @@ Transform:
   m_Children:
   - {fileID: 858184161}
   - {fileID: 1927527548}
-  - {fileID: 525733730}
   m_Father: {fileID: 798287414}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -9.664, y: 5.638, z: 149.541}
@@ -4839,7 +4807,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1613879245}
   - component: {fileID: 1613879244}
-  - component: {fileID: 1613879243}
   m_Layer: 0
   m_Name: Left Hand Model
   m_TagString: Untagged
@@ -4847,43 +4814,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1613879243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1613879242}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e39af18bfa018947b350fb56f7eafe8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 7d378fae-88f5-4dbc-96dd-880ca956d5d1
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -4289430672226363583, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  selectAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Select
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 2b9b0b50-a0e4-4251-9a17-d50739ec99e1
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 6558622148059887818, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  animator: {fileID: 1613879244}
 --- !u!95 &1613879244
 Animator:
   serializedVersion: 4
@@ -5218,14 +5148,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1725509871}
   - component: {fileID: 1725509873}
-  - component: {fileID: 1725509872}
   m_Layer: 0
   m_Name: Right Hand Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1725509871
 Transform:
   m_ObjectHideFlags: 0
@@ -5243,43 +5172,6 @@ Transform:
   m_Father: {fileID: 798287414}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!114 &1725509872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725509870}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e39af18bfa018947b350fb56f7eafe8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activateAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 353d0697-1a3e-42b5-a4f7-f8f186293c33
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  selectAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Select
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 8992a1c5-f814-447d-875b-bd38722c35c1
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  animator: {fileID: 1725509873}
 --- !u!95 &1725509873
 Animator:
   serializedVersion: 4
@@ -5639,7 +5531,6 @@ MonoBehaviour:
   menu: {fileID: 381031508}
   videoPlayerObject: {fileID: 1657041556}
   leftHand: {fileID: 1613879242}
-  rightHand: {fileID: 798287412}
 --- !u!4 &1895991987
 Transform:
   m_ObjectHideFlags: 0
@@ -5666,7 +5557,7 @@ GameObject:
   - component: {fileID: 1927527548}
   - component: {fileID: 1927527549}
   m_Layer: 0
-  m_Name: Poke
+  m_Name: Poke Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5705,7 +5596,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_InteractionLayers:
     m_Bits: 4294967295
-  m_AttachTransform: {fileID: 525733730}
+  m_AttachTransform: {fileID: 858184161}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
