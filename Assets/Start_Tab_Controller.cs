@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class Start_Tab_Controller : MonoBehaviour
 {
     public GameObject WorldSphere, tablet, leftHand;
+    public Material sphereBox;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,21 @@ public class Start_Tab_Controller : MonoBehaviour
         videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/ferry");
         videoPlayer.Play();
         tablet.SetActive(false);
+
+        // reduce exposure then increase it again
+        var exposure = sphereBox.GetFloat("_Exposure");
+        while(exposure > 0.0f) {
+            exposure -= 0.01f;
+            sphereBox.SetFloat("_Exposure", exposure);
+            yield return new WaitForSeconds(0.01f);
+        }
+        while(exposure < 1.0f) {
+            exposure += 0.01f;
+            sphereBox.SetFloat("_Exposure", exposure);
+            yield return new WaitForSeconds(0.01f);
+        }
+
+        // wait for video to finish
         while(videoPlayer.isPlaying) {
             yield return null;
         }

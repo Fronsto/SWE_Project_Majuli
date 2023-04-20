@@ -2270,6 +2270,7 @@ MonoBehaviour:
   WorldSphere: {fileID: 742620980}
   tablet: {fileID: 3948227508386250233}
   leftHand: {fileID: 396646282}
+  sphereBox: {fileID: 2100000, guid: 77ea5238a1d61b64780216ae46d12acb, type: 2}
 --- !u!1 &1045061356
 GameObject:
   m_ObjectHideFlags: 0

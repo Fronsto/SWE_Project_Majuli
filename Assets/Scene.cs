@@ -108,14 +108,35 @@ public class Scene : MonoBehaviour
     ///////////////////////////////////////////////////////////////////////////
     // Jump to a location within the current site
     ///////////////////////////////////////////////////////////////////////////
-    void ChangeTexture(){
-        // first blur the existing texture
+    IEnumerator ChangeTexture(){
+        // first fade out
+        float fadeTime = 0.2f;
+        float t = 0.0f;
+        while(t < fadeTime){
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(1.0f, 0.0f, t/fadeTime);
+            sphereBox.SetFloat("_Exposure", alpha);
+            yield return null;
+        }
 
-        
+        // Change the texture
         sphereBox.SetTexture("_MainTex", locTextures[new Vector2Int(currentX, currentY)]);
         // set rotation of worldSphere based on z rotation of camera
         int rotation = locData[new Vector2Int(currentX, currentY)].rotation;
         WorldSphere.transform.rotation = Quaternion.Euler(0, rotation, 0);
+        // set the arrows
+        SetDirectionMarkers();
+        // set the audio
+        SetAndPlayAmbientAudio();
+
+        // then fade in
+        t = 0.0f;
+        while(t < fadeTime){
+            t += Time.deltaTime;
+            float alpha = Mathf.Lerp(0.0f, 1.0f, t/fadeTime);
+            sphereBox.SetFloat("_Exposure", alpha);
+            yield return null;
+        }
 
     }
     void SetAndPlayAmbientAudio() {
@@ -153,6 +174,18 @@ public class Scene : MonoBehaviour
     }
     IEnumerator PlayVideoAndJump(TransitionData transition) {
         var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
+        // reduce exposure then increase it again
+        var exposure = sphereBox.GetFloat("_Exposure");
+        while(exposure > 0.0f) {
+            exposure -= 0.01f;
+            sphereBox.SetFloat("_Exposure", exposure);
+            yield return new WaitForSeconds(0.01f);
+        }
+        while(exposure < 1.0f) {
+            exposure += 0.01f;
+            sphereBox.SetFloat("_Exposure", exposure);
+            yield return new WaitForSeconds(0.01f);
+        }
         while(videoPlayer.isPlaying) {
             yield return null;
         }
@@ -185,11 +218,8 @@ public class Scene : MonoBehaviour
             return false;
         }
         // animate this thing
-        ChangeTexture();
-        // set the arrows
-        SetDirectionMarkers();
-        // set the audio
-        SetAndPlayAmbientAudio();
+        StartCoroutine(ChangeTexture());
+
 
         return true;
     }
@@ -238,7 +268,7 @@ public class Scene : MonoBehaviour
         // diable it
         videoPlayer.enabled = false;
 
-        JumpToSite("Tinali_Road");
+        JumpToSite("Auniati");
     }
 
     // Update is called once per frame
