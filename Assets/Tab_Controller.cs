@@ -8,16 +8,18 @@ using UnityEngine.SceneManagement;
 public class Tab_Controller : MonoBehaviour
 {
     public InputActionProperty leftSelectValue;
-    public GameObject tablet, startMenu, continueMenu, mainMenu;
+    public GameObject tablet, video, map, menu, videoPlayerObject, leftHand, rightHand;
     [SerializeField] Scene sceneScript; 
 
     // Start is called before the first frame update
     void Start()
     {
         tablet.SetActive(true);
-        startMenu.SetActive(true);
-        continueMenu.SetActive(false);
-        mainMenu.SetActive(false);
+        video.SetActive(false);
+        map.SetActive(true);
+        menu.SetActive(false);
+        leftHand.SetActive(true);
+        rightHand.SetActive(true);
     }
 
     // Update is called once per frame
@@ -35,49 +37,36 @@ public class Tab_Controller : MonoBehaviour
         }
     }
 
-    // Change to Scene Main
-    public void ChangeToMain()
+    // Start Video Player
+    public void VideoPlayer()
     {
-        sceneScript.JumpToLocation(1,2);
-        startMenu.SetActive(false);
-        mainMenu.SetActive(true);
-        continueMenu.SetActive(false);
+        video.SetActive(true);
+        map.SetActive(false);
+        menu.SetActive(false);
+        var videoPlayer = videoPlayerObject.GetComponent<UnityEngine.Video.VideoPlayer>();
+        videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/akash_banti");
+        videoPlayer.Play();
     }
 
-    // Change to Scene Tutorial
-    public void ChangeToTutorial()
+    // Show Map
+    public void Map()
     {
-        
+        video.SetActive(false);
+        map.SetActive(true);
+        menu.SetActive(false);
     }
 
-    // Exit Application
-    public void ExitApplication()
+    // Show Menu
+    public void Menu()
     {
-        Application.Quit();
+        video.SetActive(false);
+        map.SetActive(false);
+        menu.SetActive(true);
     }
 
-    // Exit Menu
-    public void ChangeToStart()
+    // Exit To Start Scene
+    public void Exit()
     {
-        startMenu.SetActive(true);
-        mainMenu.SetActive(false);
-        continueMenu.SetActive(false);
-        sceneScript.JumpToSite("IntroVideo");
-    }
-
-    // Continue
-    public void Continue()
-    {
-        continueMenu.SetActive(false);
-        mainMenu.SetActive(true);
-        startMenu.SetActive(false);
-    }
-
-    // Main Menu
-    public void MainMenu()
-    {
-        continueMenu.SetActive(true);
-        mainMenu.SetActive(false);
-        startMenu.SetActive(false);
+        SceneManager.LoadScene("Start");
     }
 }
