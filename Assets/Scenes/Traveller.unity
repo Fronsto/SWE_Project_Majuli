@@ -2340,7 +2340,7 @@ MonoBehaviour:
   displayText: 
   WaitBetweenWobbles: 0.1
   theta: 0
-  Intensity: 0
+  Intensity: 500
 --- !u!114 &687327599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3118,7 +3118,7 @@ MonoBehaviour:
   displayText: 
   WaitBetweenWobbles: 0.1
   theta: 0
-  Intensity: 0
+  Intensity: 500
 --- !u!114 &827670699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4439,14 +4439,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290898173}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1341280124}
   m_Father: {fileID: 152620627}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1290898175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4731,8 +4732,8 @@ RectTransform:
   m_Children:
   - {fileID: 1415924351}
   - {fileID: 598464516}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1290898174}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4793,7 +4794,7 @@ MonoBehaviour:
   displayText: 
   WaitBetweenWobbles: 0.1
   theta: 0
-  Intensity: 0
+  Intensity: 500
 --- !u!114 &1401193538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5695,7 +5696,7 @@ MonoBehaviour:
   displayText: 
   WaitBetweenWobbles: 0.1
   theta: 0
-  Intensity: 0
+  Intensity: 500
 --- !u!114 &1627895153
 MonoBehaviour:
   m_ObjectHideFlags: 0

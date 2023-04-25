@@ -124,6 +124,9 @@ public class Scene : MonoBehaviour
         // first fade out
         float fadeTime = 0.2f;
         float t = 0.0f;
+        if(sphereBox.GetFloat("_Exposure") == 0.0f) {
+            t = fadeTime;
+        }
         while(t < fadeTime){
             t += Time.deltaTime;
             float alpha = Mathf.Lerp(1.0f, 0.0f, t/fadeTime);
@@ -136,6 +139,7 @@ public class Scene : MonoBehaviour
         // set rotation of worldSphere based on z rotation of camera
         int rotation = locData[new Vector2Int(currentX, currentY)].rotation;
         WorldSphere.transform.rotation = Quaternion.Euler(0, rotation, 0);
+
         // set the arrows
         SetDirectionMarkers();
         // set the audio
@@ -246,14 +250,21 @@ public class Scene : MonoBehaviour
             sphereBox.SetFloat("_Exposure", exposure);
             yield return new WaitForSeconds(0.01f);
         }
+        // set rotation of worldsphere to that of camera angle
+        WorldSphere.transform.rotation = Quaternion.Euler(0, Camera.main.transform.rotation.eulerAngles.y, 0);
+        videoPlayer.enabled = true;
+        videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/" + transition.transitionVideo);
+        videoPlayer.Play();
         while(exposure < 1.0f) {
             exposure += 0.01f;
             sphereBox.SetFloat("_Exposure", exposure);
             yield return new WaitForSeconds(0.01f);
         }
         while(videoPlayer.isPlaying) {
+
             yield return null;
         }
+        sphereBox.SetFloat("_Exposure", 0.0f);
         videoPlayer.enabled = false;
         JumpToSite(transition.siteName, transition.initialLocation);
     }
@@ -267,11 +278,6 @@ public class Scene : MonoBehaviour
             TransitionData transition = locData[new Vector2Int(currentX, currentY)].transition;
             // first disable all arrows
             foreach(GameObject arrow in arrows) arrow.SetActive(false);
-            // grab the video object, start playing it
-            var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
-            videoPlayer.enabled = true;
-            videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/" + transition.transitionVideo);
-            videoPlayer.Play();
             // then after the video finishes, jump to the new site
             StartCoroutine(PlayVideoAndJump(transition));
             return true;
