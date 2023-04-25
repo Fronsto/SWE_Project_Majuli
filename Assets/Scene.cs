@@ -19,6 +19,16 @@ public class Scene : MonoBehaviour
     Dictionary<Vector2Int, Texture> locTextures;
     bool lockInput = false;
 
+    public GameObject VideoIcon;
+    public GameObject DetailIcon;
+
+    public GameObject NavigationTextObjectLeft;
+    public GameObject NavigationTextObjectRight;
+    public GameObject NavigationTextObjectUp;
+    public GameObject NavigationTextObjectDown;
+
+    [SerializeField] Tab_Controller tabController;
+
     // Site data 
     [Serializable]
     public class Coordinates {
@@ -31,7 +41,6 @@ public class Scene : MonoBehaviour
         public Coordinates initialLocation;
         public string ambientAudio;
         public string tabVideo;
-        public string tabImage;
     }
     [Serializable]
     public class SiteInfo {
@@ -57,8 +66,11 @@ public class Scene : MonoBehaviour
         public List<string> obstacles;
         public string ambientAudio;
         public string tabVideo;
-        public string tabImage;
         public TransitionData transition;
+        public string NavTextDown;
+        public string NavTextUp;
+        public string NavTextLeft;
+        public string NavTextRight;
     }
     [Serializable]
     public class LocationInfo {
@@ -128,6 +140,8 @@ public class Scene : MonoBehaviour
         SetDirectionMarkers();
         // set the audio
         SetAndPlayAmbientAudio();
+        // set tablet video content
+        SetTabletVideo();
 
         // then fade in
         t = 0.0f;
@@ -138,6 +152,22 @@ public class Scene : MonoBehaviour
             yield return null;
         }
 
+    }
+    void SetTabletVideo(){
+        // set the videoContent to be played on the tablet - need to add for text content to be shown on tablet too
+        string videoContent = "";
+
+        if(locData[new Vector2Int(currentX, currentY)].tabVideo != null) {
+            videoContent = locData[new Vector2Int(currentX, currentY)].tabVideo;
+            VideoIcon.SetActive(true);
+        } else if(siteData[currentSite].tabVideo != null) {
+            videoContent = siteData[currentSite].tabVideo;
+            VideoIcon.SetActive(true);
+        } else{
+            VideoIcon.SetActive(false);
+        }
+        // call the tablet methods to provide the video and image content
+        tabController.SetVideoContent(videoContent);
     }
     void SetAndPlayAmbientAudio() {
         string audioToPlay = null;
@@ -170,6 +200,41 @@ public class Scene : MonoBehaviour
             if(item == "r") arrows[1].SetActive(false);
             if(item == "d") arrows[2].SetActive(false);
             if(item == "l") arrows[3].SetActive(false);
+        }
+        string NavigationTextDown = "";
+        if(locData[new Vector2Int(currentX, currentY)].NavTextDown != "") {
+            NavigationTextDown = locData[new Vector2Int(currentX, currentY)].NavTextDown;
+            NavigationTextObjectDown.GetComponent<NavigationTextUD>().displayText = NavigationTextDown;
+            NavigationTextObjectDown.SetActive(true);
+        } else{
+            NavigationTextObjectDown.SetActive(false);
+        }
+
+        string NavigationTextUp = "";
+        if(locData[new Vector2Int(currentX, currentY)].NavTextUp != "") {
+            NavigationTextUp = locData[new Vector2Int(currentX, currentY)].NavTextUp;
+            NavigationTextObjectUp.GetComponent<NavigationTextUD>().displayText = NavigationTextUp;
+            NavigationTextObjectUp.SetActive(true);
+        } else{
+            NavigationTextObjectUp.SetActive(false);
+        }
+
+        string NavigationTextLeft = "";
+        if(locData[new Vector2Int(currentX, currentY)].NavTextLeft != "") {
+            NavigationTextLeft = locData[new Vector2Int(currentX, currentY)].NavTextLeft;
+            NavigationTextObjectLeft.GetComponent<NavigationTextLR>().displayText = NavigationTextLeft;
+            NavigationTextObjectLeft.SetActive(true);
+        } else{
+            NavigationTextObjectLeft.SetActive(false);
+        }
+
+        string NavigationTextRight = "";
+        if(locData[new Vector2Int(currentX, currentY)].NavTextRight != "") {
+            NavigationTextRight = locData[new Vector2Int(currentX, currentY)].NavTextRight;
+            NavigationTextObjectRight.GetComponent<NavigationTextLR>().displayText = NavigationTextRight;
+            NavigationTextObjectRight.SetActive(true);
+        } else{
+            NavigationTextObjectRight.SetActive(false);
         }
     }
     IEnumerator PlayVideoAndJump(TransitionData transition) {
@@ -221,6 +286,7 @@ public class Scene : MonoBehaviour
         StartCoroutine(ChangeTexture());
 
 
+
         return true;
     }
 
@@ -251,7 +317,17 @@ public class Scene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        foreach(GameObject arrow in arrows) arrow.SetActive(false);
+        VideoIcon.SetActive(false);
+        DetailIcon.SetActive(false);
+        NavigationTextObjectDown.SetActive(false);
+        NavigationTextObjectUp.SetActive(false);
+        NavigationTextObjectLeft.SetActive(false);
+        NavigationTextObjectRight.SetActive(false);
+
         siteData = new Dictionary<String, SiteData>();
+
         // load site data
         TextAsset mytxtData=(TextAsset)Resources.Load("metaLocData");
         string jsonString=mytxtData.text;

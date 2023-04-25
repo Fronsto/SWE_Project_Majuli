@@ -12,6 +12,7 @@ public class Start_Tab_Controller : MonoBehaviour
     public GameObject WorldSphere, tablet, leftHand, rightHand, introVideo, startMenu;
     public Material sphereBox;
     string sceneToBeLoaded;
+    public GameObject leftRay, rightRay;
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +37,12 @@ public class Start_Tab_Controller : MonoBehaviour
     }
 
     IEnumerator PlayVideoAndChangeScene() {
+        // disable left and right ray
+        leftRay.SetActive(false);
+        rightRay.SetActive(false);
+
         var videoPlayer = WorldSphere.GetComponent<UnityEngine.Video.VideoPlayer>();
         videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/ferry");
-        videoPlayer.Play();
         tablet.SetActive(false);
 
         // reduce exposure then increase it again
@@ -48,6 +52,7 @@ public class Start_Tab_Controller : MonoBehaviour
             sphereBox.SetFloat("_Exposure", exposure);
             yield return new WaitForSeconds(0.01f);
         }
+        videoPlayer.Play();
         while(exposure < 1.0f) {
             exposure += 0.01f;
             sphereBox.SetFloat("_Exposure", exposure);
