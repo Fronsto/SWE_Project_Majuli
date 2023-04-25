@@ -18,8 +18,48 @@ public class Map_Controller : MonoBehaviour
         
     }
 
-    public void Location24()
+    public void Auniati()
     {
         sceneScript.JumpToSite("Auniati");
+    }
+    public void Bhogpur()
+    {
+        sceneScript.JumpToSite("Bhogpur");
+    }
+    public void Madhya_Majuli_Satra()
+    {
+        sceneScript.JumpToSite("Madhya_Majuli_Satra");
+    }
+    public void Baghor_Gaon()
+    {
+        sceneScript.JumpToSite("Baghor_Gaon");
+    }
+    public void Chawrekia()
+    {
+        sceneScript.JumpToSite("Chawrekia");
+    }
+    public void Chotaipur_Gaon()
+    {
+        sceneScript.JumpToSite("Chotaipur_Gaon");
+    }
+    public void Gormur()
+    {
+        sceneScript.JumpToSite("Gormur");
+    }
+    public void Kamalabari_Chariali()
+    {
+        sceneScript.JumpToSite("Kamalabari_Chariali");
+    }
+    public void Namoni_Jokaibuwa()
+    {
+        sceneScript.JumpToSite("Namoni_Jokaibuwa");
+    }
+    public void Nayabazar()
+    {
+        sceneScript.JumpToSite("Nayabazar");
+    }
+    public void Rawanapar()
+    {
+        sceneScript.JumpToSite("Rawanapar");
     }
 }
