@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Scene : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class Scene : MonoBehaviour
     public GameObject NavigationTextObjectDown;
 
     [SerializeField] Tab_Controller tabController;
+    [SerializeField] Map_Controller mapController;
 
     // Site data 
     [Serializable]
@@ -50,6 +52,9 @@ public class Scene : MonoBehaviour
     [Serializable]
     public class SitesWrapper {
         public SiteInfo[] Sites;
+        public string[] JumpToTraveller;
+        public string[] JumpToExpert;
+        public string[] JumpToDevotee;
     }
 
     // Transition data
@@ -67,10 +72,10 @@ public class Scene : MonoBehaviour
         public string ambientAudio;
         public string tabVideo;
         public TransitionData transition;
-        public string NavTextDown;
-        public string NavTextUp;
-        public string NavTextLeft;
-        public string NavTextRight;
+        public string navTextDown;
+        public string navTextUp;
+        public string navTextLeft;
+        public string navTextRight;
     }
     [Serializable]
     public class LocationInfo {
@@ -206,8 +211,8 @@ public class Scene : MonoBehaviour
             if(item == "l") arrows[3].SetActive(false);
         }
         string NavigationTextDown = "";
-        if(locData[new Vector2Int(currentX, currentY)].NavTextDown != "") {
-            NavigationTextDown = locData[new Vector2Int(currentX, currentY)].NavTextDown;
+        if(locData[new Vector2Int(currentX, currentY)].navTextDown != "") {
+            NavigationTextDown = locData[new Vector2Int(currentX, currentY)].navTextDown;
             NavigationTextObjectDown.GetComponent<NavigationTextUD>().displayText = NavigationTextDown;
             NavigationTextObjectDown.SetActive(true);
         } else{
@@ -215,8 +220,8 @@ public class Scene : MonoBehaviour
         }
 
         string NavigationTextUp = "";
-        if(locData[new Vector2Int(currentX, currentY)].NavTextUp != "") {
-            NavigationTextUp = locData[new Vector2Int(currentX, currentY)].NavTextUp;
+        if(locData[new Vector2Int(currentX, currentY)].navTextUp != "") {
+            NavigationTextUp = locData[new Vector2Int(currentX, currentY)].navTextUp;
             NavigationTextObjectUp.GetComponent<NavigationTextUD>().displayText = NavigationTextUp;
             NavigationTextObjectUp.SetActive(true);
         } else{
@@ -224,8 +229,8 @@ public class Scene : MonoBehaviour
         }
 
         string NavigationTextLeft = "";
-        if(locData[new Vector2Int(currentX, currentY)].NavTextLeft != "") {
-            NavigationTextLeft = locData[new Vector2Int(currentX, currentY)].NavTextLeft;
+        if(locData[new Vector2Int(currentX, currentY)].navTextLeft != "") {
+            NavigationTextLeft = locData[new Vector2Int(currentX, currentY)].navTextLeft;
             NavigationTextObjectLeft.GetComponent<NavigationTextLR>().displayText = NavigationTextLeft;
             NavigationTextObjectLeft.SetActive(true);
         } else{
@@ -233,8 +238,8 @@ public class Scene : MonoBehaviour
         }
 
         string NavigationTextRight = "";
-        if(locData[new Vector2Int(currentX, currentY)].NavTextRight != "") {
-            NavigationTextRight = locData[new Vector2Int(currentX, currentY)].NavTextRight;
+        if(locData[new Vector2Int(currentX, currentY)].navTextRight != "") {
+            NavigationTextRight = locData[new Vector2Int(currentX, currentY)].navTextRight;
             NavigationTextObjectRight.GetComponent<NavigationTextLR>().displayText = NavigationTextRight;
             NavigationTextObjectRight.SetActive(true);
         } else{
@@ -291,14 +296,13 @@ public class Scene : MonoBehaviour
         // animate this thing
         StartCoroutine(ChangeTexture());
 
-
-
         return true;
     }
 
     ///////////////////////////////////////////////////////////////////////////
     // Jump to a site
     ///////////////////////////////////////////////////////////////////////////
+    
     public void JumpToSite(string siteName, Coordinates initialLocation = null) {
         currentSite = siteName;
         // First, we load the grid data from locData.json
@@ -317,6 +321,7 @@ public class Scene : MonoBehaviour
                 Debug.Log("Error in jumping to initial location");
             }
         }
+        mapController.UpdateMap(currentSite);
     }
 
     ///////////////////////////////////////////////////////////////////////////
@@ -339,6 +344,17 @@ public class Scene : MonoBehaviour
         string jsonString=mytxtData.text;
         Debug.Log(jsonString);
         SitesWrapper sites_ = JsonUtility.FromJson<SitesWrapper>(jsonString);
+
+        // depending upon the name of teh scene, get JumpTo data
+        string scene_name = SceneManager.GetActiveScene().name;
+        if(scene_name == "Traveller"){
+            mapController.SetButtonsToShow(sites_.JumpToTraveller);
+        } else if( scene_name == "Devotee"){
+            mapController.SetButtonsToShow(sites_.JumpToDevotee);
+        } else if(scene_name == "Expert"){
+            mapController.SetButtonsToShow(sites_.JumpToExpert);
+        }
+
         SiteInfo[] arrayOfSites = sites_.Sites;
 
         foreach (SiteInfo site in arrayOfSites) {
