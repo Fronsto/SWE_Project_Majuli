@@ -11,6 +11,7 @@ public class TabletInfoIcons : MonoBehaviour
     private float theta = 0f;
     [SerializeField]
     public float Intensity = 500f;
+    public GameObject WorldSphere;
 
 
    Quaternion _targetAngle;
@@ -29,6 +30,8 @@ public class TabletInfoIcons : MonoBehaviour
     void ChangeTarget()
     {
         _targetAngle = Quaternion.Euler(Vector3.forward * Mathf.Sin(theta) * Intensity);
+        // subtract angle of camera from this angler
+        _targetAngle = Quaternion.Euler(_targetAngle.eulerAngles.x, -( _targetAngle.eulerAngles.y - Camera.main.transform.eulerAngles.y), _targetAngle.eulerAngles.z);
         if(theta >= Mathf.PI / 15f || theta <= -Mathf.PI / 15f){
             thetaStep = -thetaStep;
         }

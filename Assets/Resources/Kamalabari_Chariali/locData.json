@@ -8,7 +8,7 @@
         "rotation":270,
         "navTextLeft": "Towards Bhogpur and Bengenaati",
         "navTextRight": "Towards Auniati",
-        "navTextUp": "Towards Kamalabari Ghat",
+        "navTextUp": "See Mask Making",
         "navTextDown": "Towards Gormur and Jengrai"
       }
     },
@@ -263,7 +263,8 @@
         "obstacles": ["r"],
         "rotation":270,
         "ambientAudio": "market_sounds",
-        "navTextUp": "Towards Kamalabari Ghat"
+        "navTextUp": "Towards Kamalabari Ghat",
+        "navTextLeft" : "See Mask Making"
       }
     },
     {
@@ -286,7 +287,7 @@
       "data": {
         "obstacles": ["l", "r"],
         "rotation":270,
-        "navTextUp": "Towards Kamalabari Ghat"
+        "navTextUp": "See Mask Making"
       }
     },
     {
@@ -295,7 +296,7 @@
       "data": {
         "obstacles": ["l", "r"],
         "rotation":240,
-        "navTextUp": "Towards Kamalabari Ghat"
+        "navTextUp": "See Mask Making"
       }
     },
     {
@@ -304,7 +305,7 @@
       "data": {
         "obstacles": ["l", "r"],
         "rotation":350,
-        "navTextUp": "Towards Kamalabari Ghat"
+        "navTextUp": "See Mask Making"
 
       }
     },

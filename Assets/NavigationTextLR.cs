@@ -20,7 +20,7 @@ public class NavigationTextLR : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("ChangeTarget", 0f, WaitBetweenWobbles);
+        // InvokeRepeating("ChangeTarget", 0f, WaitBetweenWobbles);
         // grab self's text
         GetComponent<TextMeshPro>().text = displayText;
     }
@@ -29,7 +29,7 @@ public class NavigationTextLR : MonoBehaviour
     {
         //change text of t1
         GetComponent<TextMeshPro>().text = displayText;
-        transform.rotation = Quaternion.Lerp(transform.rotation, _targetAngle, Time.deltaTime);
+        // transform.rotation = Quaternion.Lerp(transform.rotation, _targetAngle, Time.deltaTime);
     }
     void ChangeTarget()
     {

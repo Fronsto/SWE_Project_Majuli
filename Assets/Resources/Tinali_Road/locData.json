@@ -20,7 +20,7 @@
       "data": {
         "rotation" : 10,
         "obstacles": ["l", "r"],
-        "ambientAudio": "town-traffic",
+        "ambientAudio": "town_traffic",
         "navTextUp": "Towards Nayabazar",
         "navTextDown": "Towards JengraiMukh"
       }
@@ -41,7 +41,7 @@
       "data": {
         "rotation" : 270,
         "obstacles": ["u", "d"],
-        "ambientAudio": "town-traffic",
+        "ambientAudio": "town_traffic",
         "navTextRight": "Towards Nayabazar",
         "navTextLeft": "Towards JengraiMukh"
       }

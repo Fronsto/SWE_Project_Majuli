@@ -400,6 +400,8 @@ public class Scene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // chnage position of worldsphere to camera position
+        WorldSphere.transform.position = Camera.main.transform.position;
         //getting angle of view
         float angle = Camera.main.transform.eulerAngles.y;
 

@@ -29,7 +29,7 @@
           "x" : 19,
           "y" : 14
         },
-        "ambientAudio" : "town-traffic"
+        "ambientAudio" : "town_traffic"
       }
     },
     {
@@ -162,7 +162,7 @@
           "x": 1,
           "y": 1
         },
-        "ambientAudio": "town-traffic"
+        "ambientAudio": "town_traffic"
       }
     },
 
