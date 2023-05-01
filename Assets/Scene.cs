@@ -43,6 +43,7 @@ public class Scene : MonoBehaviour
         public Coordinates initialLocation;
         public string ambientAudio;
         public string tabVideo;
+        public string tabText;
     }
     [Serializable]
     public class SiteInfo {
@@ -71,6 +72,7 @@ public class Scene : MonoBehaviour
         public List<string> obstacles;
         public string ambientAudio;
         public string tabVideo;
+        public string tabText;
         public TransitionData transition;
         public string navTextDown;
         public string navTextUp;
@@ -151,6 +153,8 @@ public class Scene : MonoBehaviour
         SetAndPlayAmbientAudio();
         // set tablet video content
         SetTabletVideo();
+        // set tablet text content
+        SetTabletText();
 
         // then fade in
         t = 0.0f;
@@ -163,9 +167,12 @@ public class Scene : MonoBehaviour
 
     }
     void SetTabletVideo(){
-        // set the videoContent to be played on the tablet - need to add for text content to be shown on tablet too
+        // set the videoContent to be played on the tablet
         string videoContent = "";
-
+        if(SceneManager.GetActiveScene().name == "Expert") {
+            VideoIcon.SetActive(false);
+            return;
+        }
         if(locData[new Vector2Int(currentX, currentY)].tabVideo != null) {
             videoContent = locData[new Vector2Int(currentX, currentY)].tabVideo;
             VideoIcon.SetActive(true);
@@ -178,6 +185,26 @@ public class Scene : MonoBehaviour
         // call the tablet methods to provide the video and image content
         tabController.SetVideoContent(videoContent);
     }
+
+   void SetTabletText(){
+        // set the textContent to be played on the tablet
+        string textContent = "";
+        if(SceneManager.GetActiveScene().name != "Expert") {
+            DetailIcon.SetActive(false);
+            return;
+        }
+        if(locData[new Vector2Int(currentX, currentY)].tabText != null) {
+            textContent = locData[new Vector2Int(currentX, currentY)].tabText;
+            DetailIcon.SetActive(true);
+        } else if(siteData[currentSite].tabText != null) {
+            textContent = siteData[currentSite].tabText;
+            DetailIcon.SetActive(true);
+        } else{
+            DetailIcon.SetActive(false);
+        }
+        // call the tablet methods to provide the video and image content
+        tabController.SetTextContent(textContent);
+   }
     void SetAndPlayAmbientAudio() {
         string audioToPlay = null;
         var audioSource = WorldSphere.GetComponent<AudioSource>();
@@ -367,7 +394,7 @@ public class Scene : MonoBehaviour
         videoPlayer.enabled = false;
         sphereBox.SetFloat("_Exposure", 1.0f);
 
-        JumpToSite("Auniati");
+        JumpToSite("Bahgora_ghat_Dhunaguri");
     }
 
     // Update is called once per frame

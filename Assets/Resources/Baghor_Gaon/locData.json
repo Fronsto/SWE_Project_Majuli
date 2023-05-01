@@ -1,0 +1,108 @@
+{
+	"Locs": [
+        {
+			"x": 1 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r","u"]
+			}
+		},
+    {
+			"x": 2 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"],
+        "rotation": 25,
+				"tabText": "11_Baghor_Gaon"
+			}
+		},
+        {
+			"x": 3 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 4 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 5 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 6 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 7 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 8 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"],
+				"tabVideo": "Daily_Activites",
+				"tabText": "11_Baghor_Gaon"
+			}
+		},
+        {
+			"x": 9 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 10 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 11 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+        {
+			"x": 12 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["d"],
+				"tabText": "11_Baghor_Gaon"
+			}
+		},
+        {
+			"x": 12 ,
+			"y": 1 ,
+			"data": {
+				"obstacles": ["l","u","d"],
+        "rotation": 90
+			}
+		},
+        {
+			"x": 12 ,
+			"y": 3 ,
+			"data": {
+				"obstacles": ["r","u","d"]
+			}
+		}
+    ]
+}

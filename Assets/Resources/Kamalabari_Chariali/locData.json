@@ -1,0 +1,383 @@
+{
+  "Locs": [
+    {
+      "x": 19,
+      "y": 14,
+      "data": {
+        "obstacles": [],
+        "rotation":270,
+        "navTextLeft": "Towards Bhogpur and Bengenaati",
+        "navTextRight": "Towards Auniati",
+        "navTextUp": "Towards Kamalabari Ghat",
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 20,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":250,
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 21,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":270,
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":160,
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 23,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":250,
+        "ambientAudio": "birds_nature",
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 24,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":82,
+        "ambientAudio": "birds_nature",
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 25,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "d", "r"],
+        "rotation":60,
+        "ambientAudio": "birds_nature",
+        "navTextDown": "Towards Gormur and Jengrai"
+      }
+    },
+    {
+      "x": 19,
+      "y": 4,
+      "data": {
+        "obstacles": ["d", "u", "l"],
+        "rotation":180,
+        "ambientAudio": "market_sounds",
+        "navTextLeft": "Towards Bhogpur and Bengenaati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 5,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":190,
+        "navTextLeft": "Towards Bhogpur and Bengenaati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":350,
+        "ambientAudio": "birds_nature",
+        "navTextLeft": "Towards Bhogpur and Bengenaati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":160,
+        "navTextLeft": "Towards Bhogpur and Bengenaati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":20,
+        "navTextLeft": "Towards Bhogpur and Bengenaati",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":350,
+        "ambientAudio": "market_sounds",
+        "navTextLeft": "Towards Bhogpur and Bengenaati",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 11,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":300,
+        "navTextLeft": "Towards Bhogpur and Bengenaati",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+
+    {
+      "x": 19,
+      "y": 13,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":330,
+        "ambientAudio": "market_sounds",
+        "navTextLeft": "Towards Bhogpur and Bengenaati",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r", "u"],
+        "rotation":170,
+        "ambientAudio": "birds_nature"
+        
+      }
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":170,
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":160,
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":150,
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":70,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":70,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 10,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":270,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 11,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":270,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":70,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":270,
+        "ambientAudio": "birds_nature",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 14,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":290,
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "data": {
+        "obstacles": ["r"],
+        "rotation":270,
+        "ambientAudio": "market_sounds",
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+			"x": 15,
+			"y": 13,
+			"data": {
+				"transition":{
+          "siteName": "Kamalabari_Chariali",
+          "transitionVideo": "Mask_Making_360",
+          "initialLocation": {
+            "x": 15,
+            "y": 14
+          }
+        }
+			}
+		},
+    {
+      "x": 16,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":270,
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":240,
+        "navTextUp": "Towards Kamalabari Ghat"
+      }
+    },
+    {
+      "x": 18,
+      "y": 14,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation":350,
+        "navTextUp": "Towards Kamalabari Ghat"
+
+      }
+    },
+    {
+      "x": 19,
+      "y": 15,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":165,
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":350,
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "data": {
+        "obstacles": ["d", "u"],
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 18,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":170,
+        "ambientAudio": "birds_nature",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 19,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":170,
+        "ambientAudio": "birds_nature",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+      "x": 19,
+      "y": 20,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation":170,
+        "ambientAudio": "birds_nature",
+        "navTextRight": "Towards Auniati"
+      }
+    },
+    {
+			"x": 19,
+			"y": 21,
+			"data": {
+				"transition":{
+          "siteName": "Auniati",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 21,
+            "y": 5
+          }
+        }
+			}
+		}
+  ]
+}
+

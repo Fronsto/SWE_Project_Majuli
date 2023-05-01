@@ -72,4 +72,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Ignore Resources Folder
-/[Aa]ssets/[Rr]esources/
+/[Aa]ssets/[Rr]esources/**/360images/*
+/[Aa]ssets/[Rr]esources/Transitions/*
+/[Aa]ssets/[Rr]esources/Videos/*

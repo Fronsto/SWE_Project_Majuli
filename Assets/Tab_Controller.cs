@@ -8,19 +8,25 @@ using UnityEngine.SceneManagement;
 public class Tab_Controller : MonoBehaviour
 {
     public InputActionProperty leftSelectValue;
-    public GameObject tablet, video, map, menu, videoPlayerObject, leftHand;
+    public GameObject tablet, video, map, menu, videoPlayerObject, tabInfoObject, leftHand, scrollTab;
     bool coolDown = false;
-    public string videoName;
+    string videoName, textName, scene_name;
 
     public void SetVideoContent(string name) {
         videoName = name;
         Map();
     }
 
+    public void SetTextContent(string name) {
+        textName = name;
+        Map();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        tablet.SetActive(false);
+        scene_name = SceneManager.GetActiveScene().name;
+        tablet.SetActive(true);
         video.SetActive(false);
         map.SetActive(true);
         menu.SetActive(false);
@@ -48,21 +54,34 @@ public class Tab_Controller : MonoBehaviour
     }
 
     // Start Video Player
-    public void VideoPlayer()
+    public void MediaPlayer()
     {
         video.SetActive(true);
         map.SetActive(false);
         menu.SetActive(false);
         var videoPlayer = videoPlayerObject.GetComponent<UnityEngine.Video.VideoPlayer>();
-        // videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/" + videoName);
-        // videoPlayer.Play(); 
+        var textContent = tabInfoObject.GetComponent<TMPro.TextMeshProUGUI>();
+        if(scene_name != "Expert"){
 
-        if(videoName =="") {
-            videoPlayer.enabled = false;
-        } else {
-            videoPlayer.enabled = true;
-            videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/" + videoName);
-            videoPlayer.Play(); 
+            if(videoName == "") {
+                videoPlayerObject.SetActive(false);
+                scrollTab.SetActive(true);
+                textContent.text = "No Video available !";
+            } else {
+                scrollTab.SetActive(false);
+                videoPlayerObject.SetActive(true);
+                videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/" + videoName);
+                videoPlayer.Play(); 
+            }
+        }
+        else {
+            scrollTab.SetActive(true);
+            videoPlayerObject.SetActive(false);
+            if(textName == ""){
+                textContent.text = "No Text available !";
+            } else {
+                textContent.text = Resources.Load<TextAsset>("InfoText/" + textName).text;
+            }
         }
     }
 

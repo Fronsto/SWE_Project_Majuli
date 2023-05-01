@@ -1,0 +1,180 @@
+{
+  "JumpToTraveller":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Namoni_Jokaibuwa", "JengraiMukh", "Chotaipur_Gaon", "Baghor_Gaon", "Rawanapar"],
+  "JumpToExpert":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Namoni_Jokaibuwa", "Chotaipur_Gaon", "Baghor_Gaon"],
+  "JumpToDevotee":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Madhya_Majuli_Satra", "Bhogpur"],
+  "Sites": [
+    {
+      "name": "Auniati",
+      "data": {
+        "initialLocation": {
+          "x": 21,
+          "y": 5
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Bahgora_ghat_Dhunaguri",
+      "data": {
+        "initialLocation": {
+          "x": 6,
+          "y": 2
+        }
+      }
+    },
+    {
+      "name": "Kamalabari_Chariali",
+      "data" : {
+        "initialLocation" : {
+          "x" : 19,
+          "y" : 14
+        },
+        "ambientAudio" : "town-traffic"
+      }
+    },
+    {
+      "name": "Namoni_Jokaibuwa",
+      "data": {
+        "initialLocation": {
+          "x": 6,
+          "y": 7
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "JengraiMukh",
+      "data": {
+        "initialLocation": {
+          "x": 2,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Rawanapar",
+      "data": {
+        "initialLocation": {
+          "x": 2,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Baghor_Gaon",
+      "data": {
+        "initialLocation": {
+          "x": 12,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Chotaipur_Gaon",
+      "data": {
+        "initialLocation": {
+          "x": 10,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Madhya_Majuli_Satra",
+      "data": {
+        "initialLocation": {
+          "x": 10,
+          "y": 4
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Bhogpur",
+      "data": {
+        "initialLocation": {
+          "x": 18,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Bali_Jokaibuwa_Gaon",
+      "data": {
+        "initialLocation": {
+          "x": 4,
+          "y": 4
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Bamboo_bridge",
+      "data": {
+        "initialLocation": {
+          "x": 2,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+
+    {
+      "name": "Chawrekia",
+      "data": {
+        "initialLocation": {
+          "x": 1,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+
+    {
+      "name": "Dhunaguri_Balichapori",
+      "data": {
+        "initialLocation": {
+          "x": 2,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+
+    {
+      "name": "Jugundhari_Road",
+      "data": {
+        "initialLocation": {
+          "x": 3,
+          "y": 2
+        },
+        "ambientAudio": "birds_nature"
+      }
+    },
+	  {
+      "name": "Nayabazar",
+      "data": {
+        "initialLocation": {
+          "x": 1,
+          "y": 1
+        },
+        "ambientAudio": "town-traffic"
+      }
+    },
+
+    {
+      "name": "Tinali_Road",
+      "data": {
+        "initialLocation": {
+          "x": 3,
+          "y": 3
+        },
+        "ambientAudio": "birds_nature"
+      }
+    }
+  ]
+}

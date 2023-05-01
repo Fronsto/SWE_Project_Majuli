@@ -15,7 +15,8 @@ public class NavigationTextUD : MonoBehaviour
     private float theta = 0f;
     [SerializeField]
     public float Intensity = 500f;
-
+    [SerializeField]
+    public float x = 270f;
    Quaternion _targetAngle;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class NavigationTextUD : MonoBehaviour
     }
     void ChangeTarget()
     {
-        _targetAngle = Quaternion.Euler(Vector3.down * Mathf.Sin(theta) * Intensity + Vector3.up * 90f);
+        _targetAngle = Quaternion.Euler(Vector3.down * Mathf.Sin(theta) * Intensity + Vector3.up * x);
         if(theta >= Mathf.PI / 15f || theta <= -Mathf.PI / 15f){
             thetaStep = -thetaStep;
         }
