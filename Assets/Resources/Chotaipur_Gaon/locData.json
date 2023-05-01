@@ -1,95 +1,95 @@
 {
-  "Locs": [
-    {
-      "x": 10,
-      "y": 2,
-      "data": {
-        "rotation" : 205 ,
-        "obstacles": ["l", "r", "d"]
-      }
-    },
-    {
-      "x": 9,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 8,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 7,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"],
-        "tabText": "14_Chotaipur"
-      }
-    },
-    {
-      "x": 6,
-      "y": 2,
-      "data": {
-        "rotation" : 340,
-        "obstacles": ["l", "r"],
-        "tabVideo": "Daily_Activities",
-        "navTextUp": "Towards Chawrekia"
-      }
-    },
-    {
-      "x": 5,
-      "y": 2,
-      "data": {
-        "rotation" : 340,
-        "obstacles": ["l", "r"],
-        "navTextUp": "Towards Chawrekia"
-      }
-    },
-    {
-      "x": 4,
-      "y": 2,
-      "data": {
-        "rotation" : 335,
-        "obstacles": ["l", "r"],
-        "navTextUp": "Towards Chawrekia"
-      }
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "data": {
-        "rotation" : 335,
-        "obstacles": ["l", "r"],
-        "navTextUp": "Towards Chawrekia",
-        "tabText": "14_Chotaipur"
-      }
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"],
-        "navTextUp": "Towards Chawrekia",
-        "tabText": "14_Chotaipur"
-      }
-    },
-    {
-			"x": 1,
-			"y": 2,
-			"data": {
-				"transition":{
-          "siteName": "Chawrekia",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 4,
-            "y": 4
-          }
+    "Locs": [
+        {
+            "name": "img_10_2",
+            "data": {
+                "up": "img_9_2",
+                "rotation": 205
+            }
+        },
+        {
+            "name": "img_9_2",
+            "data": {
+                "up": "img_8_2",
+                "down": "img_10_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_8_2",
+            "data": {
+                "up": "img_7_2",
+                "down": "img_9_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_7_2",
+            "data": {
+                "up": "img_6_2",
+                "down": "img_8_2",
+                "tabText": "14_Chotaipur",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_2",
+            "data": {
+                "up": "img_5_2",
+                "down": "img_7_2",
+                "tabVideo": "Daily_Activities",
+                "navTextUp": "Towards Chawrekia",
+                "rotation": 340
+            }
+        },
+        {
+            "name": "img_5_2",
+            "data": {
+                "up": "img_4_2",
+                "down": "img_6_2",
+                "navTextUp": "Towards Chawrekia",
+                "rotation": 340
+            }
+        },
+        {
+            "name": "img_4_2",
+            "data": {
+                "up": "img_3_2",
+                "down": "img_5_2",
+                "navTextUp": "Towards Chawrekia",
+                "rotation": 335
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "up": "img_2_2",
+                "down": "img_4_2",
+                "tabText": "14_Chotaipur",
+                "navTextUp": "Towards Chawrekia",
+                "rotation": 335
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "up": "img_1_2",
+                "down": "img_3_2",
+                "tabText": "14_Chotaipur",
+                "navTextUp": "Towards Chawrekia",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_1_2",
+            "data": {
+                "down": "img_2_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Chawrekia",
+                "initImage": "img_4_4",
+                "rotation": 0
+            }
         }
-			}
-		}
-  ]
+    ]
 }

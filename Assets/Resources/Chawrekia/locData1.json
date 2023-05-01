@@ -1,0 +1,68 @@
+{
+	"Locs": [
+		{
+			"x": 1 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r","u"],
+        "rotation": 135
+			}
+		},
+        {
+			"x": 2 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","r"]
+			}
+		},
+    {
+			"x": 3 ,
+			"y": 2 ,
+			"data": {
+				"obstacles": ["l","d"],
+        "rotation": 90
+			}
+		},
+    {
+			"x": 3 ,
+			"y": 3 ,
+			"data": {
+				"obstacles": ["d","u"],
+				"rotation": 90,
+				"navTextRight": "Towards Chotaipur Gaon"
+			}
+		},
+        {
+			"x": 3 ,
+			"y": 4 ,
+			"data": {
+				"obstacles": ["u","r"],
+        "rotation": 45,
+				"navTextDown": "Towards Chotaipur Gaon"
+			}
+		},
+    {
+			"x": 4 ,
+			"y": 4 ,
+			"data": {
+				"obstacles": ["r","l"],
+        "rotation": 270,
+				"navTextDown": "Towards Chotaipur Gaon"
+			}
+		},
+		{
+			"x": 5,
+			"y": 4,
+			"data": {
+				"transition":{
+          "siteName": "Chotaipur_Gaon",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 2,
+            "y": 2
+          }
+        }
+			}
+		}
+    ]
+}

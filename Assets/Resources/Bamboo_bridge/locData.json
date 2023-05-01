@@ -1,104 +1,98 @@
 {
-  "Locs": [
-    {
-			"x": 2,
-			"y": 1,
-			"data": {
-				"transition":{
-          "siteName": "Bali_Jokaibuwa_Gaon",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 6,
-            "y": 8
-          }
+    "Locs": [
+        {
+            "name": "img_2_1",
+            "data": {
+                "right": "img_2_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Bali_Jokaibuwa_Gaon",
+                "initImage": "img_6_8",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "left": "img_2_1",
+                "right": "img_2_3",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "tabText": "25_Bamboo_Cross_Bridge",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "right": "img_2_5",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_5",
+            "data": {
+                "left": "img_2_4",
+                "right": "img_2_6",
+                "tabText": "25_Bamboo_Cross_Bridge",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_6",
+            "data": {
+                "left": "img_2_5",
+                "right": "img_2_7",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_7",
+            "data": {
+                "left": "img_2_6",
+                "right": "img_2_8",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_8",
+            "data": {
+                "left": "img_2_7",
+                "right": "img_2_9",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_9",
+            "data": {
+                "left": "img_2_8",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Namoni_Jokaibuwa",
+                "initImage": "img_6_1",
+                "rotation": 0
+            }
         }
-			}
-		},
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa",
-        "tabText": "25_Bamboo_Cross_Bridge"
-      }
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa",
-        "tabText": "25_Bamboo_Cross_Bridge"
-      }
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "data": {
-        "obstacles": ["d", "u", "d"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 2,
-      "y": 8,
-      "data": {
-        "obstacles": ["d", "u"],
-        "rotation": 90,
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-			"x": 2,
-			"y": 9,
-			"data": {
-				"transition":{
-          "siteName": "Namoni_Jokaibuwa",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 6,
-            "y": 1
-          }
-        }
-			}
-		}
-  ]
+    ]
 }

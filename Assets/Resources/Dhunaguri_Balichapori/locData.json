@@ -1,68 +1,64 @@
 {
-  "Locs": [
-    {
-      "x": 2,
-      "y": 1,
-      "data": {
-        "transition":{
-          "siteName": "Bahgora_ghat_Dhunaguri",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 7,
-            "y": 2
-          }
+    "Locs": [
+        {
+            "name": "img_2_1",
+            "data": {
+                "right": "img_2_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Bahgora_ghat_Dhunaguri",
+                "initImage": "img_7_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "left": "img_2_1",
+                "right": "img_2_3",
+                "down": "img_3_2",
+                "navTextLeft": "Towards Bahgora Ghat",
+                "navTextRight": "Towards Jugundhari Road",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "down": "img_3_3",
+                "navTextLeft": "Towards Bahgora Ghat",
+                "navTextRight": "Towards Jugundhari Road",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "right": "img_3_3",
+                "up": "img_2_2",
+                "rotation": 210
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "left": "img_3_2",
+                "up": "img_2_3",
+                "rotation": 220
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Jugundhari_Road",
+                "initImage": "img_2_2",
+                "rotation": 0
+            }
         }
-      }
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["u"],
-        "rotation": 0,
-        "navTextLeft": "Towards Bahgora Ghat",
-        "navTextRight": "Towards Jugundhari Road"
-      }
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "data": {
-        "obstacles": ["u"],
-        "rotation": 0,
-        "navTextLeft": "Towards Bahgora Ghat",
-        "navTextRight": "Towards Jugundhari Road"
-      }
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "d"],
-        "rotation": 210
-      }
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "data": {
-        "obstacles": ["r", "d"],
-        "rotation": 220
-      }
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "data": {
-        "transition":{
-          "siteName": "Jugundhari_Road",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 2
-          }
-        }
-      }
-    }
-  ]
+    ]
 }

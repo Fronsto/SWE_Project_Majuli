@@ -1,97 +1,99 @@
 {
     "Locs": [
-      {
-        "x": 1,
-        "y": 2,
-        "data": {
-          "transition":{
-            "siteName": "Tinali_Road",
-            "transitionVideo": "tr1",
-            "initialLocation": {
-              "x": 2,
-              "y": 3
+        {
+            "name": "img_1_2",
+            "data": {
+                "down": "img_2_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Tinali_Road",
+                "initImage": "img_2_3",
+                "rotation": 0
             }
-          }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "up": "img_1_2",
+                "down": "img_3_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "up": "img_2_2",
+                "down": "img_4_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_4_2",
+            "data": {
+                "up": "img_3_2",
+                "down": "img_5_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_5_2",
+            "data": {
+                "up": "img_4_2",
+                "down": "img_6_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "ambientAudio": "town_traffic",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_2",
+            "data": {
+                "up": "img_5_2",
+                "down": "img_7_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "ambientAudio": "town_traffic",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_7_2",
+            "data": {
+                "up": "img_6_2",
+                "down": "img_8_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "ambientAudio": "town_traffic",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_8_2",
+            "data": {
+                "up": "img_7_2",
+                "down": "img_9_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "ambientAudio": "town_traffic",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_2",
+            "data": {
+                "up": "img_8_2",
+                "down": "img_10_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_10_2",
+            "data": {
+                "up": "img_9_2",
+                "navTextUp": "Towards Tinali and JengraiMukh",
+                "rotation": 0
+            }
         }
-      },
-      {
-        "x": 2,
-        "y": 2,
-        "data": {
-          "rotation": 270,
-          "obstacles": ["l", "r"],
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 3,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"],
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 4,
-        "y": 2,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["l", "r"],
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 5,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"],
-          "ambientAudio": "market_sounds",
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 6,
-        "y": 2,
-        "data": {
-          "rotation": 270,
-          "obstacles": ["l", "r"],
-          "ambientAudio": "market_sounds",
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 7,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"],
-          "ambientAudio": "market_sounds",
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 8,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"],
-          "ambientAudio": "market_sounds",
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 9,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"],
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      },
-      {
-        "x": 10,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r", "d"],
-          "navTextUp": "Towards Tinali and JengraiMukh"
-        }
-      }
     ]
-  }
+}

@@ -1,196 +1,213 @@
 {
-  "Locs": [
-    {
-      "x": 3,
-      "y": 5,
-      "data": {
-        "rotation": 200,
-        "obstacles": ["u", "l", "d"]
-      }
-    },
-    {
-      "x": 4,
-      "y": 6,
-      "data": {
-        "rotation": 270,
-        "obstacles": ["d", "r", "l"]
-      }
-    },
-    {
-      "x": 3,
-      "y": 6,
-      "data": {
-        "rotation": 270,
-        "obstacles": ["u"],
-        "navTextRight": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 3,
-      "y": 8,
-      "data": {
-        "rotation": 90,
-        "obstacles": ["u", "r", "d"],
-        "tabText": "16_Namoni_Jokaibuwa"
-      }
-    },
-    {
-      "x": 3,
-      "y": 7,
-      "data": {
-        "rotation": 90,
-        "obstacles": ["u"],
-        "navTextDown": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 4,
-      "y": 7,
-      "data": {
-        "obstacles": ["r", "l"],
-        "navTextDown": "Towards Bali Jokaibuwa",
-        "tabText": "16_Namoni_Jokaibuwa"
-      }
-    },
-    {
-      "x": 5,
-      "y": 7,
-      "data": {
-        "obstacles": ["r", "l"],
-        "navTextDown": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 7,
-      "data": {
-        "rotation": 0,
-        "obstacles": ["r"],
-        "navTextLeft": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 6,
-      "data": {
-        "rotation": 315,
-        "obstacles": ["u", "d"],
-        "navTextLeft": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 5,
-      "data": {
-        "rotation": 335,
-        "obstacles": ["d"],
-        "navTextLeft": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 4,
-      "data": {
-        "rotation": 270,
-        "obstacles": ["u", "d"],
-        "navTextLeft": "Towards Bali Jokaibuwa",
-        "tabText": "16_Namoni_Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 3,
-      "data": {
-        "rotation": 270,
-        "obstacles": ["u", "d"],
-        "navTextLeft": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 2,
-      "data": {
-        "rotation": 180,
-        "obstacles": ["u", "d"],
-        "navTextLeft": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 6,
-      "y": 1,
-      "data": {
-        "rotation": 180,
-        "obstacles": ["l", "u"],
-        "navTextDown": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-			"x": 7,
-			"y": 1,
-			"data": {
-				"transition":{
-          "siteName": "Bamboo_bridge",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 8
-          }
+    "Locs": [
+        {
+            "name": "img_3_5",
+            "data": {
+                "left": "img_3_3",
+                "right": "img_3_6",
+                "down": "img_5_5",
+                "rotation": 200
+            }
+        },
+        {
+            "name": "img_4_6",
+            "data": {
+                "left": "img_4_3",
+                "right": "img_4_7",
+                "up": "img_3_6",
+                "down": "img_6_6",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_3_6",
+            "data": {
+                "left": "img_3_5",
+                "right": "img_3_7",
+                "down": "img_4_6",
+                "navTextRight": "Towards Bali Jokaibuwa",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_3_8",
+            "data": {
+                "left": "img_3_7",
+                "tabText": "16_Namoni_Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_7",
+            "data": {
+                "left": "img_3_6",
+                "right": "img_3_8",
+                "down": "img_4_7",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_4_7",
+            "data": {
+                "left": "img_4_6",
+                "up": "img_3_7",
+                "down": "img_5_7",
+                "tabText": "16_Namoni_Jokaibuwa",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_5_7",
+            "data": {
+                "left": "img_5_5",
+                "up": "img_4_7",
+                "down": "img_6_7",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_7",
+            "data": {
+                "left": "img_6_6",
+                "up": "img_5_7",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_6",
+            "data": {
+                "left": "img_6_5",
+                "right": "img_6_7",
+                "up": "img_4_6",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 315
+            }
+        },
+        {
+            "name": "img_6_5",
+            "data": {
+                "left": "img_6_4",
+                "right": "img_6_6",
+                "up": "img_5_5",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 335
+            }
+        },
+        {
+            "name": "img_6_4",
+            "data": {
+                "left": "img_6_3",
+                "right": "img_6_5",
+                "up": "img_5_4",
+                "tabText": "16_Namoni_Jokaibuwa",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_6_3",
+            "data": {
+                "left": "img_6_2",
+                "right": "img_6_4",
+                "up": "img_5_3",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_6_2",
+            "data": {
+                "left": "img_6_1",
+                "right": "img_6_3",
+                "up": "img_5_2",
+                "navTextLeft": "Towards Bali Jokaibuwa",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_6_1",
+            "data": {
+                "right": "img_6_2",
+                "down": "img_7_1",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_7_1",
+            "data": {
+                "up": "img_6_1",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Bamboo_bridge",
+                "initImage": "img_2_8",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_5_5",
+            "data": {
+                "left": "img_5_4",
+                "right": "img_5_7",
+                "up": "img_3_5",
+                "down": "img_6_5",
+                "tabVideo": "Daily_Activities",
+                "rotation": 335
+            }
+        },
+        {
+            "name": "img_5_4",
+            "data": {
+                "left": "img_5_3",
+                "right": "img_5_5",
+                "down": "img_6_4",
+                "tabVideo": "Daily_Activities",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_5_3",
+            "data": {
+                "left": "img_5_2",
+                "right": "img_5_4",
+                "up": "img_4_3",
+                "down": "img_6_3",
+                "tabVideo": "Daily_Activities",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_4_3",
+            "data": {
+                "right": "img_4_6",
+                "up": "img_3_3",
+                "down": "img_5_3",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "right": "img_3_5",
+                "down": "img_4_3",
+                "tabVideo": "Handloom",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_5_2",
+            "data": {
+                "right": "img_5_3",
+                "down": "img_6_2",
+                "tabVideo": "Handloom",
+                "navTextDown": "Towards Bali Jokaibuwa",
+                "rotation": 0
+            }
         }
-			}
-		},
-    {
-      "x": 5,
-      "y": 5,
-      "data": {
-        "rotation": 335,
-        "obstacles": ["u", "r"],
-        "tabVideo": "Daily_Activities",
-        "tabText": "16_Namoni_Jokaibuwa"
-      }
-    },
-    {
-      "x": 5,
-      "y": 4,
-      "data": {
-        "rotation": 180,
-        "obstacles": ["u", "d"],
-        "tabVideo": "Daily_Activities"
-      }
-    },
-    {
-      "x": 5,
-      "y": 3,
-      "data": {
-        "obstacles": ["d"],
-        "tabVideo": "Daily_Activities",
-        "navTextDown": "Towards Bali Jokaibuwa"
-      }
-    },
-    {
-      "x": 4,
-      "y": 3,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "data": {
-        "rotation": 270,
-        "obstacles": ["l", "r", "u"],
-        "tabVideo": "Handloom"
-      }
-    },
-    {
-      "x": 5,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "d", "u"],
-        "tabVideo": "Handloom",
-        "navTextDown": "Towards Bali Jokaibuwa",
-        "tabText": "16_Namoni_Jokaibuwa"
-      }
-    }
-  ]
+    ]
 }

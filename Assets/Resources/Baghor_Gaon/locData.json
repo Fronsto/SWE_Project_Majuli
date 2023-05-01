@@ -1,108 +1,117 @@
 {
-  "Locs": [
-    {
-      "x": 1,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r", "u"]
-      }
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 25,
-        "tabText": "11_Baghor_Gaon"
-      }
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 4,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 5,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 6,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 7,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 8,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"],
-        "tabVideo": "Daily_Activites",
-        "tabText": "11_Baghor_Gaon"
-      }
-    },
-    {
-      "x": 9,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 10,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 11,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "r"]
-      }
-    },
-    {
-      "x": 12,
-      "y": 2,
-      "data": {
-        "obstacles": ["d"],
-        "tabText": "11_Baghor_Gaon"
-      }
-    },
-    {
-      "x": 12,
-      "y": 1,
-      "data": {
-        "obstacles": ["l", "u", "d"],
-        "rotation": 90
-      }
-    },
-    {
-      "x": 12,
-      "y": 3,
-      "data": {
-        "obstacles": ["r", "u", "d"]
-      }
-    }
-  ]
+    "Locs": [
+        {
+            "name": "img_1_2",
+            "data": {
+                "down": "img_2_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "up": "img_1_2",
+                "down": "img_3_2",
+                "tabText": "11_Baghor_Gaon",
+                "rotation": 25
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "up": "img_2_2",
+                "down": "img_4_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_4_2",
+            "data": {
+                "up": "img_3_2",
+                "down": "img_5_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_5_2",
+            "data": {
+                "up": "img_4_2",
+                "down": "img_6_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_2",
+            "data": {
+                "up": "img_5_2",
+                "down": "img_7_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_7_2",
+            "data": {
+                "up": "img_6_2",
+                "down": "img_8_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_8_2",
+            "data": {
+                "up": "img_7_2",
+                "down": "img_9_2",
+                "tabVideo": "Daily_Activites",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_2",
+            "data": {
+                "up": "img_8_2",
+                "down": "img_10_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_10_2",
+            "data": {
+                "up": "img_9_2",
+                "down": "img_11_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_11_2",
+            "data": {
+                "up": "img_10_2",
+                "down": "img_12_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_12_2",
+            "data": {
+                "left": "img_12_1",
+                "right": "img_12_3",
+                "up": "img_11_2",
+                "tabText": "11_Baghor_Gaon",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_12_1",
+            "data": {
+                "right": "img_12_2",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_3",
+            "data": {
+                "left": "img_12_2",
+                "rotation": 0
+            }
+        }
+    ]
 }

@@ -1,0 +1,35 @@
+{
+  "Locs": [
+    {
+      "x": 1,
+      "y": 2,
+      "data": {
+        "transition":{
+          "siteName": "Dhunaguri_Balichapori",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 2,
+            "y": 3
+          }
+        }
+      }
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "data": {
+        "rotation": 5,
+        "obstacles": ["l", "r"],
+        "navTextUp": "Towards Dhunaguri Balichapori"
+      }
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "data": {
+        "rotation": 342,
+        "obstacles": ["l", "d", "r"]
+      }
+    }
+  ]
+}

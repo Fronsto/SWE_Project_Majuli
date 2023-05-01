@@ -1,228 +1,248 @@
 {
     "Locs": [
-      {
-        "x": 1,
-        "y": 1,
-        "data": {
-          "rotation": -90,
-          "obstacles": ["l", "u"]
+        {
+            "name": "img_1_1",
+            "data": {
+                "right": "img_1_2",
+                "down": "img_2_1",
+                "rotation": -90
+            }
+        },
+        {
+            "name": "img_1_2",
+            "data": {
+                "left": "img_1_1",
+                "right": "img_1_3",
+                "down": "img_3_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_1_3",
+            "data": {
+                "left": "img_1_2",
+                "down": "img_2_3",
+                "rotation": -90
+            }
+        },
+        {
+            "name": "img_2_1",
+            "data": {
+                "right": "img_2_3",
+                "up": "img_1_1",
+                "down": "img_3_1",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_1",
+                "up": "img_1_3",
+                "down": "img_3_3",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_1",
+            "data": {
+                "right": "img_3_2",
+                "up": "img_2_1",
+                "down": "img_4_1",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "left": "img_3_1",
+                "right": "img_3_3",
+                "up": "img_1_2",
+                "down": "img_6_2",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "left": "img_3_2",
+                "right": "img_3_4",
+                "up": "img_2_3",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_4",
+            "data": {
+                "left": "img_3_3",
+                "right": "img_3_5",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_5",
+            "data": {
+                "left": "img_3_4",
+                "right": "img_3_6",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_6",
+            "data": {
+                "left": "img_3_5",
+                "right": "img_3_7",
+                "tabVideo": "Raas_Festival",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_7",
+            "data": {
+                "left": "img_3_6",
+                "right": "img_3_8",
+                "tabVideo": "Raas_Festival",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_8",
+            "data": {
+                "left": "img_3_7",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_4_1",
+            "data": {
+                "up": "img_3_1",
+                "down": "img_5_1",
+                "rotation": -90
+            }
+        },
+        {
+            "name": "img_5_1",
+            "data": {
+                "up": "img_4_1",
+                "down": "img_6_1",
+                "rotation": -90
+            }
+        },
+        {
+            "name": "img_6_1",
+            "data": {
+                "right": "img_6_2",
+                "up": "img_5_1",
+                "rotation": -90
+            }
+        },
+        {
+            "name": "img_6_2",
+            "data": {
+                "left": "img_6_1",
+                "up": "img_3_2",
+                "down": "img_7_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_7_2",
+            "data": {
+                "up": "img_6_2",
+                "down": "img_8_2",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_8_2",
+            "data": {
+                "up": "img_7_2",
+                "down": "img_9_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_2",
+            "data": {
+                "up": "img_8_2",
+                "down": "img_10_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_10_2",
+            "data": {
+                "up": "img_9_2",
+                "down": "img_11_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_11_2",
+            "data": {
+                "up": "img_10_2",
+                "down": "img_12_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_12_2",
+            "data": {
+                "up": "img_11_2",
+                "down": "img_13_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_13_2",
+            "data": {
+                "up": "img_12_2",
+                "down": "img_14_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_14_2",
+            "data": {
+                "up": "img_13_2",
+                "down": "img_15_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_15_2",
+            "data": {
+                "up": "img_14_2",
+                "down": "img_16_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_16_2",
+            "data": {
+                "up": "img_15_2",
+                "down": "img_17_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_17_2",
+            "data": {
+                "up": "img_16_2",
+                "down": "img_18_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_18_2",
+            "data": {
+                "up": "img_17_2",
+                "rotation": 0
+            }
         }
-      },
-      {
-        "x": 1,
-        "y": 2,
-        "data": {
-          "obstacles": ["d", "u"]
-        }
-      },
-      {
-        "x": 1,
-        "y": 3,
-        "data": {
-          "rotation": -90,
-          "obstacles": ["u","d", "l"]
-        }
-      },
-      {
-        "x": 2,
-        "y": 1,
-        "data": {
-          "rotation": 180,
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 2,
-        "y": 3,
-        "data": {
-          "obstacles": ["l", "u", "r"]
-        }
-      },
-      {
-        "x": 3,
-        "y": 1,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["l"]
-        }
-      },
-      {
-        "x": 3,
-        "y": 2,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"]
-        }
-      },
-      {
-        "x": 3,
-        "y": 3,
-        "data": {
-          "rotation": 90,
-          "obstacles": []
-        }
-      },
-      {
-        "x": 3,
-        "y": 4,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"]
-        }
-      },
-      {
-        "x": 3,
-        "y": 5,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"],
-          "ambientAudio": "temple_bells"
-        }
-      },
-      {
-        "x": 3,
-        "y": 6,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"],
-          "ambientAudio": "temple_bells",
-          "tabVideo": "Raas_Festival"
-        }
-      },
-      {
-        "x": 3,
-        "y": 7,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"],
-          "ambientAudio": "temple_bells",
-          "tabVideo": "Raas_Festival"
-        }
-      },
-      {
-        "x": 3,
-        "y": 8,
-        "data": {
-          "rotation": 90,
-          "obstacles": ["d", "u"],
-          "ambientAudio": "temple_bells"
-        }
-      },
-      {
-        "x": 4,
-        "y": 1,
-        "data": {
-          "rotation": -90,
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 5,
-        "y": 1,
-        "data": {
-          "rotation": -90,
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 6,
-        "y": 1,
-        "data": {
-          "rotation": -90,
-          "obstacles": ["l"]
-        }
-      },
-      {
-        "x": 6,
-        "y": 2,
-        "data": {
-          "obstacles": ["u", "r"]
-        }
-      },
-      {
-        "x": 7,
-        "y": 2,
-        "data": {
-          "rotation": 180,
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 8,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 9,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 10,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 11,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 12,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 13,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 14,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 15,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 16,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 17,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      },
-      {
-        "x": 18,
-        "y": 2,
-        "data": {
-          "obstacles": ["l", "r"]
-        }
-      }
     ]
 }

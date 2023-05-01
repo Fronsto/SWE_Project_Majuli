@@ -1,64 +1,58 @@
 {
-  "Locs": [
-    {
-			"x": 1,
-			"y": 3,
-			"data": {
-				"transition":{
-          "siteName": "Nayabazar",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 2
-          }
+    "Locs": [
+        {
+            "name": "img_1_3",
+            "data": {
+                "down": "img_2_3",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Nayabazar",
+                "initImage": "img_2_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "up": "img_1_3",
+                "down": "img_3_3",
+                "navTextUp": "Towards Nayabazar",
+                "navTextDown": "Towards JengraiMukh",
+                "ambientAudio": "town_traffic",
+                "rotation": 10
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "left": "img_3_2",
+                "up": "img_2_3",
+                "navTextLeft": "Towards JengraiMukh",
+                "navTextUp": "Towards Nayabazar",
+                "rotation": 240
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "left": "img_3_1",
+                "right": "img_3_3",
+                "navTextLeft": "Towards JengraiMukh",
+                "navTextRight": "Towards Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_3_1",
+            "data": {
+                "right": "img_3_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "JengraiMukh",
+                "initImage": "img_2_12",
+                "rotation": 0
+            }
         }
-			}
-		},
-    {
-      "x": 2,
-      "y": 3,
-      "data": {
-        "rotation" : 10,
-        "obstacles": ["l", "r"],
-        "ambientAudio": "town_traffic",
-        "navTextUp": "Towards Nayabazar",
-        "navTextDown": "Towards JengraiMukh"
-      }
-    },
-    {
-      "x": 3,
-      "y": 3,
-      "data": {
-        "rotation" : 240,
-        "obstacles": ["d", "r"],
-        "navTextUp": "Towards Nayabazar",
-        "navTextLeft": "Towards JengraiMukh"
-      }
-    },
-    {
-      "x": 3,
-      "y": 2,
-      "data": {
-        "rotation" : 270,
-        "obstacles": ["u", "d"],
-        "ambientAudio": "town_traffic",
-        "navTextRight": "Towards Nayabazar",
-        "navTextLeft": "Towards JengraiMukh"
-      }
-    },
-    {
-			"x": 3,
-			"y": 1,
-			"data": {
-				"transition":{
-          "siteName": "JengraiMukh",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 12
-          }
-        }
-			}
-		}
-  ]
+    ]
 }

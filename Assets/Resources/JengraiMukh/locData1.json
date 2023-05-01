@@ -1,0 +1,258 @@
+{
+  "Locs": [
+    {
+      "x": 2,
+      "y": 2,
+      "data": {
+        "obstacles": ["u", "d", "l"],
+        "rotation": 270,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 270,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 280,
+        "ambientAudio": "town_traffic",
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 270,
+        "ambientAudio": "town_traffic",
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "data": {
+        "obstacles": ["u"],
+        "rotation": 170,
+        "ambientAudio": "town_traffic",
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 150,
+        "ambientAudio": "town_traffic",
+        "navTextRight": "Towards Tinali and Nayabazar"
+
+      }
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 60,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 70,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "data": {
+        "obstacles": ["u"],
+        "rotation": 180,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 70,
+        "navTextRight": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+			"x": 2,
+			"y": 13,
+			"data": {
+				"transition":{
+          "siteName": "Tinali_Road",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 3,
+            "y": 2
+          }
+        }
+			}
+		},
+    {
+      "x": 3,
+      "y": 11,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 160,
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 170,
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 180,
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 180,
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "data": {
+        "obstacles": ["l", "r","d"],
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 160,
+        "ambientAudio": "town_traffic",
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 180,
+        "ambientAudio": "town_traffic",
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 190,
+        "ambientAudio": "town_traffic",
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 270,
+        "ambientAudio": "town_traffic",
+        "navTextUp": "Towards Tinali and Nayabazar"
+      }
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 170,
+        "ambientAudio": "town_traffic"
+      }
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 90
+      }
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "data": {
+        "obstacles": ["l", "r"],
+        "rotation": 190
+      }
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "data": {
+        "obstacles": ["l"],
+        "rotation": 190,
+        "tabVideo" : "Ali_Ae_Ligang_Jengraimukh"
+      }
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "data": {
+        "obstacles": ["r","u","d"],
+        "rotation": 60,
+        "tabVideo" : "Ali_Ae_Ligang_Jengraimukh"
+      }
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "data": {
+        "obstacles": ["l","r","d"],
+        "rotation": 90,
+        "ambientAudio": "town_traffic"
+      }
+    }
+  ]
+}

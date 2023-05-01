@@ -1,522 +1,583 @@
 {
-	"Locs": [
-		{
-			"x": 10 ,
-			"y": 1 ,
-			"data": {
-				"obstacles": ["u","d","l"],
-				"rotation": 90,
-				"ambientAudio": ""
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": [],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 11 ,
-			"data": {
-				"obstacles": ["u","d"]
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 12 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 45
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 13 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 270
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 14 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 270
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 15 ,
-			"data": {
-				"obstacles": ["r","d"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 3 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["r"],
-          		"rotation": 270,
-							"navTextDown": "Towards Satra premises/exit"
-							
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 7 ,
-			"data": {
-				"obstacles": ["l"],
-				"rotation": 235
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 8 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 10 ,
-			"y": 9 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": ["d"],
-				"rotation": 90,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 11 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 90,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 12 ,
-			"data": {
-				"obstacles": ["u","r","d"],
-				"rotation": 225
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 17 ,
-			"data": {
-				"obstacles": ["u","l","r"],
-				"rotation": 90,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-          		"rotation": 180,
-							"navTextDown": "Towards Satra premises/exit"
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 7 ,
-			"data": {
-				"obstacles": ["r","l"],
-				"rotation": 45
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 8 ,
-			"data": {
-				"obstacles": ["u","l"],
-				"rotation": 90
-			}
-		},
-		{
-			"x": 11 ,
-			"y": 9 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"rotation": 90,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270,
-							"ambientAudio": "temple_bells",
-							"tabVideo": "Bhaona_Dance_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 11 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270,
-							"ambientAudio": "temple_bells",
-							"tabVideo": "Bhaona_Dance_Auniati",
-							"tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 12 ,
-			"data": {
-				"obstacles": ["u","d"],
-         		"rotation": 90,
-						 "ambientAudio": "temple_bells",
-						 "tabVideo": "Chaul_sidha_Ceremony_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 13 ,
-			"data": {
-				"obstacles": ["u","d"],
-				"ambientAudio": "temple_bells",
-				"tabVideo": "Chaul_sidha_Ceremony_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 14 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270,
-							"ambientAudio": "temple_bells",
-							"tabVideo": "Paal_Naam_Auniati",
-							"tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 15 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270,
-							"ambientAudio": "temple_bells",
-							"tabVideo": "Paal_Naam_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 16 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 90,
-							"ambientAudio": "temple_bells",
-							"tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 17 ,
-			"data": {
-				"obstacles": ["r"],
-        "rotation": 90,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l"],
-        "rotation": 180,
-				"navTextRight": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 6 ,
-			"data": {
-				"obstacles": ["u","d"],
-        		"rotation": 90,
-						"navTextRight": "Towards Satra premises",
-						"navTextLeft": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 7 ,
-			"data": {
-				"obstacles": ["d"],
-          		"rotation": 90,
-							"ambientAudio": "temple_bells",
-							"navTextRight": "Towards Satra premises",
-							"navTextLeft": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 8 ,
-			"data": {
-				"obstacles": [],
-         		"rotation": 90,
-						 "ambientAudio": "temple_bells",
-						 "tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 12 ,
-			"y": 9 ,
-			"data": {
-				"obstacles": ["u","d"],
-          		"rotation": 270,
-							"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 13 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": ["d","r","u"],
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 13 ,
-			"y": 17 ,
-			"data": {
-				"obstacles": ["d","l","r"],
-          		"rotation": 90,
-							"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 13 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"tabVideo": "Akash_Banti_Auniati",
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 13 ,
-			"y": 8 ,
-			"data": {
-				"obstacles": ["d","l"],
-				"rotation": 45
-			}
-		},
-		{
-			"x": 13 ,
-			"y": 9 ,
-			"data": {
-				"obstacles": ["d","u"],
-				"rotation": 270
-			}
-		},
-		{
-			"x": 14 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"tabVideo": "Akash_Banti_Auniati",
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-	
-			}
-		},
-		{
-			"x": 15 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"tabVideo": "Akash_Banti_Auniati",
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 16 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 17 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"ambientAudio": "town_traffic",
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 18 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"ambientAudio": "town_traffic",
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 19 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 20 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards Satra premises",
-				"navTextDown": "Towards main gate/exit",
-				"tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 21 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l", "d"],
-				"navTextUp": "Towards Satra premises",
-				"navTextRight": "Towards Kamalabari Chariali",
-				"tabText": "1_Auniati"
-			}
-		},
-		{
-			"x": 21,
-			"y": 6,
-			"data": {
-				"transition":{
-          "siteName": "Kamalabari_Chariali",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 19,
-            "y": 20
-          }
+    "Locs": [
+        {
+            "name": "img_10_1",
+            "data": {
+                "right": "img_10_2",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_10_10",
+            "data": {
+                "left": "img_10_9",
+                "right": "img_10_11",
+                "up": "img_9_10",
+                "down": "img_11_10",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_10_11",
+            "data": {
+                "left": "img_10_10",
+                "right": "img_10_12",
+                "down": "img_11_11",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_10_12",
+            "data": {
+                "left": "img_10_11",
+                "right": "img_10_13",
+                "down": "img_11_12",
+                "rotation": 45
+            }
+        },
+        {
+            "name": "img_10_13",
+            "data": {
+                "left": "img_10_12",
+                "right": "img_10_14",
+                "down": "img_12_13",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_14",
+            "data": {
+                "left": "img_10_13",
+                "right": "img_10_15",
+                "down": "img_12_14",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_15",
+            "data": {
+                "left": "img_10_14",
+                "up": "img_9_15",
+                "down": "img_12_15",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_10_2",
+            "data": {
+                "left": "img_10_1",
+                "right": "img_10_3",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_3",
+            "data": {
+                "left": "img_10_2",
+                "right": "img_10_4",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_4",
+            "data": {
+                "left": "img_10_3",
+                "right": "img_10_5",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_5",
+            "data": {
+                "left": "img_10_4",
+                "right": "img_10_7",
+                "up": "img_9_5",
+                "down": "img_11_5",
+                "navTextDown": "Towards Satra premises/exit",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_10_7",
+            "data": {
+                "left": "img_10_5",
+                "right": "img_10_8",
+                "up": "img_9_7",
+                "down": "img_11_7",
+                "rotation": 235
+            }
+        },
+        {
+            "name": "img_10_8",
+            "data": {
+                "left": "img_10_7",
+                "right": "img_10_9",
+                "down": "img_11_8",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_10_9",
+            "data": {
+                "left": "img_10_8",
+                "right": "img_10_10",
+                "down": "img_11_9",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_11_10",
+            "data": {
+                "left": "img_11_9",
+                "right": "img_11_11",
+                "up": "img_10_10",
+                "down": "img_12_10",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_11_11",
+            "data": {
+                "left": "img_11_10",
+                "right": "img_11_12",
+                "up": "img_10_11",
+                "down": "img_12_11",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_11_12",
+            "data": {
+                "left": "img_11_11",
+                "right": "img_11_17",
+                "up": "img_10_12",
+                "down": "img_12_12",
+                "rotation": 225
+            }
+        },
+        {
+            "name": "img_11_17",
+            "data": {
+                "left": "img_11_12",
+                "down": "img_12_17",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_11_5",
+            "data": {
+                "right": "img_11_7",
+                "up": "img_10_5",
+                "down": "img_12_5",
+                "navTextDown": "Towards Satra premises/exit",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_11_7",
+            "data": {
+                "left": "img_11_5",
+                "right": "img_11_8",
+                "up": "img_10_7",
+                "down": "img_12_7",
+                "rotation": 45
+            }
+        },
+        {
+            "name": "img_11_8",
+            "data": {
+                "left": "img_11_7",
+                "right": "img_11_9",
+                "up": "img_10_8",
+                "down": "img_12_8",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_11_9",
+            "data": {
+                "left": "img_11_8",
+                "right": "img_11_10",
+                "up": "img_10_9",
+                "down": "img_12_9",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_10",
+            "data": {
+                "left": "img_12_9",
+                "right": "img_12_11",
+                "up": "img_11_10",
+                "down": "img_13_10",
+                "tabVideo": "Bhaona_Dance_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_12_11",
+            "data": {
+                "left": "img_12_10",
+                "right": "img_12_12",
+                "up": "img_11_11",
+                "tabVideo": "Bhaona_Dance_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_12_12",
+            "data": {
+                "left": "img_12_11",
+                "right": "img_12_13",
+                "up": "img_11_12",
+                "tabVideo": "Chaul_sidha_Ceremony_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_13",
+            "data": {
+                "left": "img_12_12",
+                "right": "img_12_14",
+                "up": "img_10_13",
+                "tabVideo": "Chaul_sidha_Ceremony_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_12_14",
+            "data": {
+                "left": "img_12_13",
+                "right": "img_12_15",
+                "up": "img_10_14",
+                "tabVideo": "Paal_Naam_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_12_15",
+            "data": {
+                "left": "img_12_14",
+                "right": "img_12_16",
+                "up": "img_10_15",
+                "tabVideo": "Paal_Naam_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_12_16",
+            "data": {
+                "left": "img_12_15",
+                "right": "img_12_17",
+                "tabText": "1_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_17",
+            "data": {
+                "left": "img_12_16",
+                "up": "img_11_17",
+                "down": "img_13_17",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_5",
+            "data": {
+                "right": "img_12_6",
+                "up": "img_11_5",
+                "down": "img_13_5",
+                "navTextRight": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_12_6",
+            "data": {
+                "left": "img_12_5",
+                "right": "img_12_7",
+                "up": "img_9_6",
+                "down": "img_21_6",
+                "navTextLeft": "Towards main gate/exit",
+                "navTextRight": "Towards Satra premises",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_7",
+            "data": {
+                "left": "img_12_6",
+                "right": "img_12_8",
+                "up": "img_11_7",
+                "navTextLeft": "Towards main gate/exit",
+                "navTextRight": "Towards Satra premises",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_8",
+            "data": {
+                "left": "img_12_7",
+                "right": "img_12_9",
+                "up": "img_11_8",
+                "down": "img_13_8",
+                "tabText": "1_Auniati",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_12_9",
+            "data": {
+                "left": "img_12_8",
+                "right": "img_12_10",
+                "up": "img_11_9",
+                "down": "img_13_9",
+                "ambientAudio": "temple_bells",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_13_10",
+            "data": {
+                "left": "img_13_9",
+                "right": "img_13_17",
+                "up": "img_12_10",
+                "ambientAudio": "temple_bells",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_13_17",
+            "data": {
+                "left": "img_13_10",
+                "up": "img_12_17",
+                "ambientAudio": "temple_bells",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_13_5",
+            "data": {
+                "right": "img_13_8",
+                "up": "img_12_5",
+                "down": "img_14_5",
+                "tabVideo": "Akash_Banti_Auniati",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_13_8",
+            "data": {
+                "left": "img_13_5",
+                "right": "img_13_9",
+                "up": "img_12_8",
+                "rotation": 45
+            }
+        },
+        {
+            "name": "img_13_9",
+            "data": {
+                "left": "img_13_8",
+                "right": "img_13_10",
+                "up": "img_12_9",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_14_5",
+            "data": {
+                "up": "img_13_5",
+                "down": "img_15_5",
+                "tabVideo": "Akash_Banti_Auniati",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_15_5",
+            "data": {
+                "up": "img_14_5",
+                "down": "img_16_5",
+                "tabVideo": "Akash_Banti_Auniati",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_16_5",
+            "data": {
+                "up": "img_15_5",
+                "down": "img_17_5",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_17_5",
+            "data": {
+                "up": "img_16_5",
+                "down": "img_18_5",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "ambientAudio": "town_traffic",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_18_5",
+            "data": {
+                "up": "img_17_5",
+                "down": "img_19_5",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "ambientAudio": "town_traffic",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_19_5",
+            "data": {
+                "up": "img_18_5",
+                "down": "img_20_5",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_20_5",
+            "data": {
+                "up": "img_19_5",
+                "down": "img_21_5",
+                "tabText": "1_Auniati",
+                "navTextUp": "Towards Satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_21_5",
+            "data": {
+                "right": "img_21_6",
+                "up": "img_20_5",
+                "tabText": "1_Auniati",
+                "navTextRight": "Towards Kamalabari Chariali",
+                "navTextUp": "Towards Satra premises",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_21_6",
+            "data": {
+                "left": "img_21_5",
+                "up": "img_12_6",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Kamalabari_Chariali",
+                "initImage": "img_19_20",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_7_15",
+            "data": {
+                "down": "img_8_15",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_8_10",
+            "data": {
+                "left": "img_8_5",
+                "right": "img_8_15",
+                "down": "img_9_10",
+                "ambientAudio": "temple_bells",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_8_15",
+            "data": {
+                "left": "img_8_10",
+                "up": "img_7_15",
+                "down": "img_9_15",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_8_5",
+            "data": {
+                "right": "img_8_10",
+                "down": "img_9_5",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_10",
+            "data": {
+                "left": "img_9_7",
+                "right": "img_9_15",
+                "up": "img_8_10",
+                "down": "img_10_10",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_9_15",
+            "data": {
+                "left": "img_9_10",
+                "up": "img_8_15",
+                "down": "img_10_15",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_9_5",
+            "data": {
+                "right": "img_9_6",
+                "up": "img_8_5",
+                "down": "img_10_5",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_6",
+            "data": {
+                "left": "img_9_5",
+                "right": "img_9_7",
+                "down": "img_12_6",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_9_7",
+            "data": {
+                "left": "img_9_6",
+                "right": "img_9_10",
+                "down": "img_10_7",
+                "rotation": 0
+            }
         }
-			}
-		},
-		{
-			"x": 7 ,
-			"y": 15 ,
-			"data": {
-				"obstacles": ["u","l","r"]
-			}
-		},
-		{
-			"x": 8 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": ["l","r","u"],
-				"rotation": 180,
-				"ambientAudio": "temple_bells"
-			}
-		},
-		{
-			"x": 8 ,
-			"y": 15 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 8 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r","u"]
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 10 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 15 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"rotation": 180
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 5 ,
-			"data": {
-				"obstacles": ["l","r"]
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 6 ,
-			"data": {
-				"obstacles": ["d","l","u"],
-				"rotation": 270
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 7 ,
-			"data": {
-				"obstacles": ["r","u"]
-			}
-		}
-	]
+    ]
 }

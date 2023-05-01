@@ -1,258 +1,264 @@
 {
-  "Locs": [
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["u", "d", "l"],
-        "rotation": 270,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 270,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 280,
-        "ambientAudio": "town_traffic",
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 270,
-        "ambientAudio": "town_traffic",
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 6,
-      "data": {
-        "obstacles": ["u"],
-        "rotation": 170,
-        "ambientAudio": "town_traffic",
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 7,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 150,
-        "ambientAudio": "town_traffic",
-        "navTextRight": "Towards Tinali and Nayabazar"
-
-      }
-    },
-    {
-      "x": 2,
-      "y": 8,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 60,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 9,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 90,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 10,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 70,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 11,
-      "data": {
-        "obstacles": ["u"],
-        "rotation": 180,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 2,
-      "y": 12,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 70,
-        "navTextRight": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-			"x": 2,
-			"y": 13,
-			"data": {
-				"transition":{
-          "siteName": "Tinali_Road",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 3,
-            "y": 2
-          }
+    "Locs": [
+        {
+            "name": "img_2_2",
+            "data": {
+                "right": "img_2_3",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "right": "img_2_5",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 280
+            }
+        },
+        {
+            "name": "img_2_5",
+            "data": {
+                "left": "img_2_4",
+                "right": "img_2_6",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_2_6",
+            "data": {
+                "left": "img_2_5",
+                "right": "img_2_7",
+                "down": "img_4_6",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 170
+            }
+        },
+        {
+            "name": "img_2_7",
+            "data": {
+                "left": "img_2_6",
+                "right": "img_2_8",
+                "down": "img_11_7",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 150
+            }
+        },
+        {
+            "name": "img_2_8",
+            "data": {
+                "left": "img_2_7",
+                "right": "img_2_9",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 60
+            }
+        },
+        {
+            "name": "img_2_9",
+            "data": {
+                "left": "img_2_8",
+                "right": "img_2_10",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_10",
+            "data": {
+                "left": "img_2_9",
+                "right": "img_2_11",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 70
+            }
+        },
+        {
+            "name": "img_2_11",
+            "data": {
+                "left": "img_2_10",
+                "right": "img_2_12",
+                "down": "img_3_11",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_2_12",
+            "data": {
+                "left": "img_2_11",
+                "right": "img_2_13",
+                "navTextRight": "Towards Tinali and Nayabazar",
+                "rotation": 70
+            }
+        },
+        {
+            "name": "img_2_13",
+            "data": {
+                "left": "img_2_12",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Tinali_Road",
+                "initImage": "img_3_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_11",
+            "data": {
+                "up": "img_2_11",
+                "down": "img_4_11",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "rotation": 160
+            }
+        },
+        {
+            "name": "img_4_11",
+            "data": {
+                "left": "img_4_6",
+                "up": "img_3_11",
+                "down": "img_5_11",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "rotation": 170
+            }
+        },
+        {
+            "name": "img_5_11",
+            "data": {
+                "left": "img_5_6",
+                "up": "img_4_11",
+                "down": "img_6_11",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_6_11",
+            "data": {
+                "left": "img_6_6",
+                "up": "img_5_11",
+                "down": "img_7_11",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_7_11",
+            "data": {
+                "left": "img_7_6",
+                "up": "img_6_11",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_4_6",
+            "data": {
+                "right": "img_4_11",
+                "up": "img_2_6",
+                "down": "img_5_6",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 160
+            }
+        },
+        {
+            "name": "img_5_6",
+            "data": {
+                "right": "img_5_11",
+                "up": "img_4_6",
+                "down": "img_6_6",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 180
+            }
+        },
+        {
+            "name": "img_6_6",
+            "data": {
+                "right": "img_6_11",
+                "up": "img_5_6",
+                "down": "img_7_6",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 190
+            }
+        },
+        {
+            "name": "img_7_6",
+            "data": {
+                "right": "img_7_11",
+                "up": "img_6_6",
+                "down": "img_8_6",
+                "navTextUp": "Towards Tinali and Nayabazar",
+                "ambientAudio": "town_traffic",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_8_6",
+            "data": {
+                "up": "img_7_6",
+                "down": "img_9_6",
+                "ambientAudio": "town_traffic",
+                "rotation": 170
+            }
+        },
+        {
+            "name": "img_9_6",
+            "data": {
+                "up": "img_8_6",
+                "down": "img_10_6",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_10_6",
+            "data": {
+                "up": "img_9_6",
+                "down": "img_11_6",
+                "rotation": 190
+            }
+        },
+        {
+            "name": "img_11_6",
+            "data": {
+                "right": "img_11_7",
+                "up": "img_10_6",
+                "down": "img_12_6",
+                "tabVideo": "Ali_Ae_Ligang_Jengraimukh",
+                "rotation": 190
+            }
+        },
+        {
+            "name": "img_11_7",
+            "data": {
+                "left": "img_11_6",
+                "up": "img_2_7",
+                "tabVideo": "Ali_Ae_Ligang_Jengraimukh",
+                "rotation": 60
+            }
+        },
+        {
+            "name": "img_12_6",
+            "data": {
+                "up": "img_11_6",
+                "ambientAudio": "town_traffic",
+                "rotation": 90
+            }
         }
-			}
-		},
-    {
-      "x": 3,
-      "y": 11,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 160,
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 4,
-      "y": 11,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 170,
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 5,
-      "y": 11,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 180,
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 6,
-      "y": 11,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 180,
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 7,
-      "y": 11,
-      "data": {
-        "obstacles": ["l", "r","d"],
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 4,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 160,
-        "ambientAudio": "town_traffic",
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 5,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 180,
-        "ambientAudio": "town_traffic",
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 6,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 190,
-        "ambientAudio": "town_traffic",
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 7,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 270,
-        "ambientAudio": "town_traffic",
-        "navTextUp": "Towards Tinali and Nayabazar"
-      }
-    },
-    {
-      "x": 8,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 170,
-        "ambientAudio": "town_traffic"
-      }
-    },
-    {
-      "x": 9,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 90
-      }
-    },
-    {
-      "x": 10,
-      "y": 6,
-      "data": {
-        "obstacles": ["l", "r"],
-        "rotation": 190
-      }
-    },
-    {
-      "x": 11,
-      "y": 6,
-      "data": {
-        "obstacles": ["l"],
-        "rotation": 190,
-        "tabVideo" : "Ali_Ae_Ligang_Jengraimukh"
-      }
-    },
-    {
-      "x": 11,
-      "y": 7,
-      "data": {
-        "obstacles": ["r","u","d"],
-        "rotation": 60,
-        "tabVideo" : "Ali_Ae_Ligang_Jengraimukh"
-      }
-    },
-    {
-      "x": 12,
-      "y": 6,
-      "data": {
-        "obstacles": ["l","r","d"],
-        "rotation": 90,
-        "ambientAudio": "town_traffic"
-      }
-    }
-  ]
+    ]
 }

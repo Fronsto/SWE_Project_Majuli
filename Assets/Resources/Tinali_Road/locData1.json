@@ -1,0 +1,65 @@
+{
+  "Locs": [
+    {
+			"x": 1,
+			"y": 3,
+			"data": {
+				"transition":{
+          "siteName": "Nayabazar",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 2,
+            "y": 2
+          }
+        }
+			}
+		},
+    {
+      "x": 2,
+      "y": 3,
+      "data": {
+        "rotation" : 10,
+        "obstacles": ["l", "r"],
+        "ambientAudio": "town_traffic",
+        "navTextUp": "Towards Nayabazar",
+        
+        "navTextDown": "Towards JengraiMukh"
+      }
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "data": {
+        "rotation" : 240,
+        "obstacles": ["d", "r"],
+        "navTextUp": "Towards Nayabazar",
+        "navTextLeft": "Towards JengraiMukh"
+      }
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "data": {
+        "rotation" : 270,
+        "obstacles": ["u", "d"],
+        "ambientAudio": "town_traffic",
+        "navTextRight": "Towards Nayabazar",
+        "navTextLeft": "Towards JengraiMukh"
+      }
+    },
+    {
+			"x": 3,
+			"y": 1,
+			"data": {
+				"transition":{
+          "siteName": "JengraiMukh",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 2,
+            "y": 12
+          }
+        }
+			}
+		}
+  ]
+}

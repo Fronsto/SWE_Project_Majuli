@@ -1,38 +1,34 @@
 {
-  "Locs": [
-    {
-      "x": 6,
-      "y": 2,
-      "data": {
-        "obstacles": ["u", "r", "l"],
-        "rotation": 310,
-				"ambientAudio": "shore",
-        "navTextDown": "Towards Dhunaguri Balichapori"
-      }
-    },
-    {
-      "x": 7,
-      "y": 2,
-      "data": {
-        "obstacles": ["r", "l"],
-        "rotation": 310,
-				"ambientAudio": "shore",
-        "navTextDown": "Towards Dhunaguri Balichapori"
-      }
-    },
-    {
-      "x": 8,
-      "y": 2,
-      "data": {
-        "transition":{
-          "siteName": "Dhunaguri_Balichapori",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 2
-          }
+    "Locs": [
+        {
+            "name": "img_6_2",
+            "data": {
+                "down": "img_7_2",
+                "navTextDown": "Towards Dhunaguri Balichapori",
+                "ambientAudio": "shore",
+                "rotation": 310
+            }
+        },
+        {
+            "name": "img_7_2",
+            "data": {
+                "up": "img_6_2",
+                "down": "img_8_2",
+                "navTextDown": "Towards Dhunaguri Balichapori",
+                "ambientAudio": "shore",
+                "rotation": 310
+            }
+        },
+        {
+            "name": "img_8_2",
+            "data": {
+                "up": "img_7_2",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Dhunaguri_Balichapori",
+                "initImage": "img_2_2",
+                "rotation": 0
+            }
         }
-      }
-    }
-  ]
+    ]
 }

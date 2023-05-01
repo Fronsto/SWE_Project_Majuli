@@ -1,173 +1,194 @@
 {
-	"Locs": [
-		{
-			"x": 10 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r","d"],
-				"navTextUp": "Towards satra premises",
-				"navTextLeft": "Towards Gormur and Kamalabari",
-				"tabText": "6_Madhyo_Majuli_Satra"
-			}
-		},
-		{
-			"x": 9 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 8 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 7 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 6 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 5 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 4 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
-				"navTextUp": "Towards satra premises",
-				"navTextDown": "Towards main gate/exit",
-				"tabText": "6_Madhyo_Majuli_Satra"
-			}
-		},
-		{
-			"x": 3 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["r"],
-                "rotation": 270,
-								"navTextLeft": "Towards satra premises",
-								"navTextDown": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 2 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["l","r"],
+    "Locs": [
+        {
+            "name": "img_10_4",
+            "data": {
+                "up": "img_9_4",
+                "tabText": "6_Madhyo_Majuli_Satra",
+                "navTextLeft": "Towards Gormur and Kamalabari",
+                "navTextUp": "Towards satra premises",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_9_4",
+            "data": {
+                "up": "img_8_4",
+                "down": "img_10_4",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_8_4",
+            "data": {
+                "up": "img_7_4",
+                "down": "img_9_4",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_7_4",
+            "data": {
+                "up": "img_6_4",
+                "down": "img_8_4",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_6_4",
+            "data": {
+                "up": "img_5_4",
+                "down": "img_7_4",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_5_4",
+            "data": {
+                "up": "img_4_4",
+                "down": "img_6_4",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_4_4",
+            "data": {
+                "up": "img_3_4",
+                "down": "img_5_4",
+                "tabText": "6_Madhyo_Majuli_Satra",
+                "navTextUp": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_4",
+            "data": {
+                "left": "img_3_3",
+                "up": "img_2_4",
+                "down": "img_4_4",
+                "navTextLeft": "Towards satra premises",
+                "navTextDown": "Towards main gate/exit",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "up": "img_1_4",
+                "down": "img_3_4",
                 "rotation": 180
-			}
-		},
-		{
-			"x": 1 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["r","u"],
+            }
+        },
+        {
+            "name": "img_1_4",
+            "data": {
+                "left": "img_1_3",
+                "down": "img_2_4",
                 "rotation": 135
-			}
-		},
-		{
-			"x": 3 ,
-			"y": 3 ,
-			"data": {
-				"obstacles": ["u","d"],
-                "rotation": 270,
-								"navTextLeft": "Towards satra premises",
-								"navTextRight": "Towards main gate/exit"
-			}
-		},
-		{
-			"x": 2 ,
-			"y": 3 ,
-			"data": {
-				"obstacles": ["r","u","d"],
-        "ambientAudio": "temple_bells",
-				"tabText": "6_Madhyo_Majuli_Satra"
-			}
-		},
-		{
-			"x": 1 ,
-			"y": 3 ,
-			"data": {
-				"obstacles": ["u","d"],
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "left": "img_3_2",
+                "right": "img_3_4",
+                "up": "img_2_3",
+                "navTextLeft": "Towards satra premises",
+                "navTextRight": "Towards main gate/exit",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "up": "img_1_3",
+                "down": "img_3_3",
+                "tabText": "6_Madhyo_Majuli_Satra",
+                "ambientAudio": "temple_bells",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_1_3",
+            "data": {
+                "left": "img_1_2",
+                "right": "img_1_4",
+                "down": "img_2_3",
                 "rotation": 90
-			}
-		},
-		{
-			"x": 3 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["d"],
-                "rotation": 345,
-								"navTextUp": "Towards satra premises",
-								"navTextRight": "Towards main gate/exit",
-								"tabText": "6_Madhyo_Majuli_Satra"
-			}
-		},
-		{
-			"x": 2 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["l","u"],
-        "ambientAudio": "temple_bells",
-				"navTextDown": "Towards main gate/exit",
-				"tabText": "6_Madhyo_Majuli_Satra"
-			}
-		},
-		{
-			"x": 1 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["u","d"]
-			}
-		},
-		{
-			"x": 3 ,
-			"y": 1 ,
-			"data": {
-				"obstacles": ["l","d"],
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "left": "img_3_1",
+                "right": "img_3_3",
+                "up": "img_2_2",
+                "tabText": "6_Madhyo_Majuli_Satra",
+                "navTextRight": "Towards main gate/exit",
+                "navTextUp": "Towards satra premises",
+                "rotation": 345
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "left": "img_2_1",
+                "right": "img_2_3",
+                "up": "img_1_2",
+                "down": "img_3_2",
+                "tabText": "6_Madhyo_Majuli_Satra",
+                "navTextDown": "Towards main gate/exit",
+                "ambientAudio": "temple_bells",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_1_2",
+            "data": {
+                "left": "img_1_1",
+                "right": "img_1_3",
+                "down": "img_2_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_1",
+            "data": {
+                "right": "img_3_2",
+                "up": "img_2_1",
                 "rotation": 315
-			}
-		},
-		{
-			"x": 2 ,
-			"y": 1 ,
-			"data": {
-				"obstacles": ["l","r"]
-			}
-		},
-		{
-			"x": 1 ,
-			"y": 1 ,
-			"data": {
-				"obstacles": ["l","u"],
+            }
+        },
+        {
+            "name": "img_2_1",
+            "data": {
+                "right": "img_2_2",
+                "up": "img_1_1",
+                "down": "img_3_1",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_1_1",
+            "data": {
+                "right": "img_1_2",
+                "down": "img_2_1",
                 "rotation": 45
-			}
-		}
+            }
+        }
     ]
 }

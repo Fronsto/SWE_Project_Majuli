@@ -1,0 +1,104 @@
+{
+  "Locs": [
+    {
+			"x": 2,
+			"y": 1,
+			"data": {
+				"transition":{
+          "siteName": "Bali_Jokaibuwa_Gaon",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 6,
+            "y": 8
+          }
+        }
+			}
+		},
+    {
+      "x": 2,
+      "y": 2,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa"
+      }
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa",
+        "tabText": "25_Bamboo_Cross_Bridge"
+      }
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa"
+      }
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa",
+        "tabText": "25_Bamboo_Cross_Bridge"
+      }
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "data": {
+        "obstacles": ["u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa"
+      }
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "data": {
+        "obstacles": ["d", "u", "d"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa"
+      }
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "data": {
+        "obstacles": ["d", "u"],
+        "rotation": 90,
+        "navTextLeft": "Towards Bali Jokaibuwa",
+        "navTextRight": "Towards Namoni Jokaibuwa"
+      }
+    },
+    {
+			"x": 2,
+			"y": 9,
+			"data": {
+				"transition":{
+          "siteName": "Namoni_Jokaibuwa",
+          "transitionVideo": "tr1",
+          "initialLocation": {
+            "x": 6,
+            "y": 1
+          }
+        }
+			}
+		}
+  ]
+}

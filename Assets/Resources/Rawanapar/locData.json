@@ -1,33 +1,34 @@
 {
-  "Locs": [
-    {
-      "x": 2,
-      "y": 5,
-      "data": {
-        "obstacles": ["d", "u", "r"]
-      }
-    },
-    {
-      "x": 2,
-      "y": 4,
-      "data": {
-        "rotation" : 335,
-        "obstacles": ["d", "u"]
-      }
-    },
-    {
-      "x": 2,
-      "y": 3,
-      "data": {
-        "obstacles": ["d", "u"]
-      }
-    },
-    {
-      "x": 2,
-      "y": 2,
-      "data": {
-        "obstacles": ["l", "d", "u"]
-      }
-    }
-  ]
+    "Locs": [
+        {
+            "name": "img_2_5",
+            "data": {
+                "left": "img_2_4",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "right": "img_2_5",
+                "rotation": 335
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_2",
+            "data": {
+                "right": "img_2_3",
+                "rotation": 0
+            }
+        }
+    ]
 }

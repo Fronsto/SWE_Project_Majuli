@@ -1,68 +1,65 @@
 {
-	"Locs": [
-		{
-			"x": 1 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["l","r","u"],
-        "rotation": 135
-			}
-		},
+    "Locs": [
         {
-			"x": 2 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["l","r"]
-			}
-		},
-    {
-			"x": 3 ,
-			"y": 2 ,
-			"data": {
-				"obstacles": ["l","d"],
-        "rotation": 90
-			}
-		},
-    {
-			"x": 3 ,
-			"y": 3 ,
-			"data": {
-				"obstacles": ["d","u"],
-				"rotation": 90,
-				"navTextRight": "Towards Chotaipur Gaon"
-			}
-		},
+            "name": "img_1_2",
+            "data": {
+                "down": "img_2_2",
+                "rotation": 135
+            }
+        },
         {
-			"x": 3 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["u","r"],
-        "rotation": 45,
-				"navTextDown": "Towards Chotaipur Gaon"
-			}
-		},
-    {
-			"x": 4 ,
-			"y": 4 ,
-			"data": {
-				"obstacles": ["r","l"],
-        "rotation": 270,
-				"navTextDown": "Towards Chotaipur Gaon"
-			}
-		},
-		{
-			"x": 5,
-			"y": 4,
-			"data": {
-				"transition":{
-          "siteName": "Chotaipur_Gaon",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 2
-          }
+            "name": "img_2_2",
+            "data": {
+                "up": "img_1_2",
+                "down": "img_3_2",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_3_2",
+            "data": {
+                "right": "img_3_3",
+                "up": "img_2_2",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_3",
+            "data": {
+                "left": "img_3_2",
+                "right": "img_3_4",
+                "navTextRight": "Towards Chotaipur Gaon",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_3_4",
+            "data": {
+                "left": "img_3_3",
+                "down": "img_4_4",
+                "navTextDown": "Towards Chotaipur Gaon",
+                "rotation": 45
+            }
+        },
+        {
+            "name": "img_4_4",
+            "data": {
+                "up": "img_3_4",
+                "down": "img_5_4",
+                "navTextDown": "Towards Chotaipur Gaon",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_5_4",
+            "data": {
+                "up": "img_4_4",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Chotaipur_Gaon",
+                "initImage": "img_2_2",
+                "rotation": 0
+            }
         }
-			}
-		}
     ]
 }

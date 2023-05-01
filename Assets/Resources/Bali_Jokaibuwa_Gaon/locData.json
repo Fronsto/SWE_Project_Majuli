@@ -1,103 +1,100 @@
 {
-  "Locs": [
-    {
-      "x": 4,
-      "y": 4,
-      "data": {
-        "obstacles": ["u", "d", "l"],
-        "rotation": 340,
-        "ambientAudio": "shore"
-      }
-    },
-    {
-      "x": 4,
-      "y": 5,
-      "data": {
-        "obstacles": ["d"],
-        "rotation": 295,
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 4,
-      "y": 6,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 140,
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 4,
-      "y": 7,
-      "data": {
-        "obstacles": ["u", "d"],
-        "rotation": 130,
-        "navTextRight": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 4,
-      "y": 8,
-      "data": {
-        "obstacles": ["u", "r"],
-        "rotation": 130,
-        "navTextDown": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-      "x": 3,
-      "y": 5,
-      "data": {
-        "obstacles": ["r", "l"],
-        "rotation": 210,
-        "tabVideo": "Farming",
-        "tabText": "12_Bali_Jokaibuwa_Gaon"
-      }
-    },
-    {
-      "x": 2,
-      "y": 5,
-      "data": {
-        "obstacles": ["u", "r", "l"],
-        "rotation": 270,
-        "ambientAudio": "shore",
-        "tabVideo": "Farming"
-      }
-    },
-    {
-      "x": 5,
-      "y": 8,
-      "data": {
-        "obstacles": ["r", "l"],
-        "rotation": 200,
-        "tabVideo": "Daily_Activities",
-        "navTextDown": "Towards Namoni Jokaibuwa",
-        "tabText": "12_Bali_Jokaibuwa_Gaon"
-      }
-    },
-    {
-      "x": 6,
-      "y": 8,
-      "data": {
-        "obstacles": ["r", "l"],
-        "rotation": 210,
-        "navTextDown": "Towards Namoni Jokaibuwa"
-      }
-    },
-    {
-			"x": 7,
-			"y": 8,
-			"data": {
-				"transition":{
-          "siteName": "Bamboo_bridge",
-          "transitionVideo": "tr1",
-          "initialLocation": {
-            "x": 2,
-            "y": 2
-          }
+    "Locs": [
+        {
+            "name": "img_4_4",
+            "data": {
+                "right": "img_4_5",
+                "ambientAudio": "shore",
+                "rotation": 340
+            }
+        },
+        {
+            "name": "img_4_5",
+            "data": {
+                "left": "img_4_4",
+                "right": "img_4_6",
+                "up": "img_3_5",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 295
+            }
+        },
+        {
+            "name": "img_4_6",
+            "data": {
+                "left": "img_4_5",
+                "right": "img_4_7",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 140
+            }
+        },
+        {
+            "name": "img_4_7",
+            "data": {
+                "left": "img_4_6",
+                "right": "img_4_8",
+                "navTextRight": "Towards Namoni Jokaibuwa",
+                "rotation": 130
+            }
+        },
+        {
+            "name": "img_4_8",
+            "data": {
+                "left": "img_4_7",
+                "down": "img_5_8",
+                "navTextDown": "Towards Namoni Jokaibuwa",
+                "tabText": "12_Bali_Jokaibuwa_Gaon",
+                "rotation": 130
+            }
+        },
+        {
+            "name": "img_3_5",
+            "data": {
+                "up": "img_2_5",
+                "down": "img_4_5",
+                "tabVideo": "Farming",
+                
+                "rotation": 210
+            }
+        },
+        {
+            "name": "img_2_5",
+            "data": {
+                "down": "img_3_5",
+                "tabVideo": "Farming",
+                "ambientAudio": "shore",
+                "rotation": 270
+            }
+        },
+        {
+            "name": "img_5_8",
+            "data": {
+                "up": "img_4_8",
+                "down": "img_6_8",
+                "tabVideo": "Daily_Activities",
+                "navTextDown": "Towards Namoni Jokaibuwa",
+                "rotation": 200
+            }
+        },
+        {
+            "name": "img_6_8",
+            "data": {
+                "up": "img_5_8",
+                "down": "img_7_8",
+                "tabText": "12_Bali_Jokaibuwa_Gaon",
+                "navTextDown": "Towards Namoni Jokaibuwa",
+                "rotation": 210
+            }
+        },
+        {
+            "name": "img_7_8",
+            "data": {
+                "up": "img_6_8",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Bamboo_bridge",
+                "initImage": "img_2_2",
+                "rotation": 0
+            }
         }
-			}
-		}
-  ]
+    ]
 }
