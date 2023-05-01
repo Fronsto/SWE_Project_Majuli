@@ -45,6 +45,8 @@ public class Start_Tab_Controller : MonoBehaviour
         videoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Transitions/ferry");
         tablet.SetActive(false);
 
+        WorldSphere.transform.rotation = Quaternion.Euler(0, Camera.main.transform.rotation.eulerAngles.y, 0);
+
         // reduce exposure then increase it again
         var exposure = sphereBox.GetFloat("_Exposure");
         while(exposure > 0.0f) {
@@ -71,7 +73,10 @@ public class Start_Tab_Controller : MonoBehaviour
         startMenu.SetActive(false);
         introVideo.SetActive(true);
         var introVideoPlayer = introVideo.GetComponent<UnityEngine.Video.VideoPlayer>();
-        introVideoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/akash_banti");
+        if(sceneToBeLoaded == "Expert")
+            introVideoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/Geomorphic Data_majuli");
+        else
+            introVideoPlayer.clip = Resources.Load<UnityEngine.Video.VideoClip>("Videos/INTRO");
         introVideoPlayer.loopPointReached += OnVideoFinished;
         introVideoPlayer.Play();
         // wait for video to finish
