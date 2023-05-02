@@ -1,11 +1,23 @@
 {
     "Locs": [
         {
+            "name": "img_10_5",
+            "data": {
+                "left": "img_10_4",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Madhya_Majuli_Gaon",
+                "initImage": "img_2_3",
+                "rotation": 0
+            }
+        },
+        {
             "name": "img_10_4",
             "data": {
+                "right": "img_10_5",
                 "up": "img_9_4",
                 "tabText": "6_Madhyo_Majuli_Satra",
-                "navTextLeft": "Towards Gormur and Kamalabari",
+                "navTextRight": "Madhya Majuli Gaon",
                 "navTextUp": "Towards satra premises",
                 "rotation": 0
             }

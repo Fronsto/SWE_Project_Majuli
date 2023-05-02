@@ -1,7 +1,7 @@
 {
   "JumpToTraveller":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Namoni_Jokaibuwa", "JengraiMukh", "Chotaipur_Gaon", "Baghor_Gaon", "Rawanapar"],
-  "JumpToExpert":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Namoni_Jokaibuwa", "Chotaipur_Gaon", "Baghor_Gaon"],
-  "JumpToDevotee":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Madhya_Majuli_Satra", "Bhogpur"],
+  "JumpToExpert":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Namoni_Jokaibuwa", "Chotaipur_Gaon", "Baghor_Gaon", "Madhya_Majuli_Satra", "Gormur_Gaon"],
+  "JumpToDevotee":["Auniati", "Kamalabari_Chariali", "Bahgora_ghat_Dhunaguri", "Madhya_Majuli_Satra", "Bhogpur", "Gormur_Gaon"],
   "Sites": [
     {
       "name": "Auniati",
@@ -55,6 +55,20 @@
       "name": "Chotaipur_Gaon",
       "data": {
         "initImage": "img_10_2",
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Gormur_Gaon",
+      "data": {
+        "initImage": "img_2_2",
+        "ambientAudio": "birds_nature"
+      }
+    },
+    {
+      "name": "Madhya_Majuli_Gaon",
+      "data": {
+        "initImage": "img_2_2",
         "ambientAudio": "birds_nature"
       }
     },

@@ -6,7 +6,7 @@
       "data": {
         "obstacles": [],
         "rotation":270,
-        "navTextLeft": "Towards Bhogpur and Bengenaati",
+
         "navTextRight": "Towards Auniati",
         "navTextUp": "Towards Kamalabari Ghat",
         "navTextDown": "Towards Gormur and Jengrai"
@@ -113,7 +113,7 @@
       "data": {
         "obstacles": ["d", "u"],
         "rotation":20,
-        "navTextLeft": "Towards Bhogpur and Bengenaati",
+
         "navTextRight": "Towards Auniati"
       }
     },
@@ -124,7 +124,7 @@
         "obstacles": ["d", "u"],
         "rotation":350,
         "ambientAudio": "town_traffic",
-        "navTextLeft": "Towards Bhogpur and Bengenaati",
+
         "navTextRight": "Towards Auniati"
       }
     },
@@ -134,7 +134,7 @@
       "data": {
         "obstacles": ["d", "u"],
         "rotation":300,
-        "navTextLeft": "Towards Bhogpur and Bengenaati",
+
         "navTextRight": "Towards Auniati"
       }
     },
@@ -146,7 +146,7 @@
         "obstacles": ["d", "u"],
         "rotation":330,
         "ambientAudio": "town_traffic",
-        "navTextLeft": "Towards Bhogpur and Bengenaati",
+
         "navTextRight": "Towards Auniati"
       }
     },

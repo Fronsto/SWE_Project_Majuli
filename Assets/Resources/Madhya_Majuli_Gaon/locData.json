@@ -1,0 +1,66 @@
+{
+    "Locs": [
+        {
+            "name": "img_2_2",
+            "data": {
+                "right": "img_2_3",
+                "transition": true,
+                "transVid": "tr1",
+                "siteName": "Madhya_Majuli_Satra",
+                "initImage": "img_10_4",
+                "rotation": 0
+            }
+        },
+        {
+            "name": "img_2_3",
+            "data": {
+                "left": "img_2_2",
+                "right": "img_2_4",
+                "navTextLeft": "Towards Madhya Majuli Satra",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_4",
+            "data": {
+                "left": "img_2_3",
+                "right": "img_2_5",
+                "navTextLeft": "Towards Madhya Majuli Satra",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_5",
+            "data": {
+                "left": "img_2_4",
+                "right": "img_2_6",
+                "navTextLeft": "Towards Madhya Majuli Satra",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_6",
+            "data": {
+                "left": "img_2_5",
+                "right": "img_2_7",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_7",
+            "data": {
+                "left": "img_2_6",
+                "right": "img_2_8",
+                "rotation": 90
+            }
+        },
+        {
+            "name": "img_2_8",
+            "data": {
+                "left": "img_2_7",
+                "right": "img_2_9",
+                "rotation": 90
+            }
+        }
+    ]
+}
