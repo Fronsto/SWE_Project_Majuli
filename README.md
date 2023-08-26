@@ -25,19 +25,15 @@ The application is split into 3 separate tours - for 3 separate user groups. Whe
 
 <img width="488" alt="image" src="https://github.com/Fronsto/SWE_Project_Majuli/assets/95305611/e19f6d09-ca9e-4cd0-91a7-8f2f0d75ca43">
 
-1. Visit the Temples
-In this mode, various satras and the corresponding videos of the numerous rituals and
-practices of those satras are shown to the user. The experience is focused heavily towards
-the religious heritage of the Majuli island.
-2. Explore the Island
-This mode is tailored for users who like a general tour of the island, exploring not only the
-satras but also the villages and towns that bear a significant cultural diversity. Various videos
-are ingrained at key points to enhance the experience of the user.
-3. Learn about the Island
-This experience is aimed at the people who would like to know about the Majuli Island in
-depth, offering substantially more information than what a tourist would get. A number of
-villages and satras are shown to the user with informative text blocks (on the tablet) at
-numerous places to add to the learning of the user.
+1. **Visit the Temples**
+
+   In this mode, various satras and the corresponding videos of the numerous rituals and practices of those satras are shown to the user. The experience is focused heavily towards the religious heritage of the Majuli island.
+3. **Explore the Island**
+
+   This mode is tailored for users who like a general tour of the island, exploring not only the satras but also the villages and towns that bear a significant cultural diversity. Various videos are ingrained at key points to enhance the experience of the user.
+5. **Learn about the Island**
+
+   This experience is aimed at the people who would like to know about the Majuli Island in depth, offering substantially more information than what a tourist would get. A number of villages and satras are shown to the user with informative text blocks (on the tablet) at numerous places to add to the learning of the user.
 
 ### Tablet
 The user is provided with a virtual tablet, that serves as the central hub for teleportation, seeking information and accessing the menu in the application. This tablet adds to the features available with the user, with a simple interface. The tablet can be triggered using a pre-defined control, and does not obstruct the view of the user when not in use.
